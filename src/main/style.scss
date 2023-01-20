@@ -1,0 +1,128 @@
+.main-container {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.father-container-content {
+    width: 90%;
+    display: flex;
+    height: 500px;
+    flex-direction: row;
+    margin-bottom: 80px;
+
+    .child-desc-content {
+        width: 40%;
+        display: flex;
+        text-align: end;
+        flex-direction: column;
+
+        div {
+            width: 94%;
+            margin-bottom: 10px;
+        }
+
+        div:nth-child(1) {
+            font-size: 2rem;
+            color: #CEA10A;
+            font-weight: 100;
+        }
+
+        div:nth-child(2) {
+            display: flex;
+            color: #fff;
+            justify-content: flex-end;
+            margin-bottom: 30px;
+
+            p {
+                width: 60%;
+                letter-spacing: 2px;
+            }
+        }
+
+        div:nth-child(3) {
+            a {
+                border-radius: 5px;
+                color: black;
+                font-weight: 600;
+                padding: 13px 16px;
+                text-decoration: none;
+                background-color: #CEA10A;
+            }
+        }
+
+    }
+
+    .child-img-content {
+        width: 60%;
+        cursor: pointer;
+        position: relative;
+        background-position: center;
+        background-size: cover;
+        object-fit: fill;
+
+        img {
+            width: 100%;
+            height: 100%;
+            position: absolute;
+        }
+
+        .block {
+            top: 0;
+            right: 0;
+            width: 50%;
+            height: 100%;
+            display: flex;
+            font-size: 3rem;
+            overflow: hidden;
+            position: absolute;
+            font-weight: 300;
+            align-items: center;
+            letter-spacing: 5px;
+            justify-content: center;
+            transition: .7s ease-in-out;
+            background-color: #CEA10A;
+        }
+    }
+}
+
+.right {
+    transform: scale(-1, 1);
+
+    .child-desc-content {
+        transform: scaleX(-1);
+        width: 40%;
+
+        div {
+            margin-left: 50px;
+
+        }
+
+
+        div:nth-child(1) {
+            display: flex;
+            justify-content: flex-start;
+        }
+
+        div:nth-child(2) {
+            display: flex;
+            justify-content: flex-start;
+
+            p {
+                text-align: start;
+            }
+        }
+
+        div:nth-child(3) {
+            display: flex;
+            justify-content: flex-start;
+        }
+    }
+
+    .child-img-content {
+        width: 60%;
+        transform: scaleX(-1);
+    }
+}
