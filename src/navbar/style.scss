@@ -1,7 +1,7 @@
 .main-navbar {
     top: 0;
     right: 0;
-    z-index: 1;
+    z-index: 3;
     width: 90px;
     height: 70px;
     display: flex;
@@ -11,7 +11,7 @@
     justify-content: center;
     transition: .7s ease-in-out;
     border-bottom-left-radius: 60%;
-    background-color: rgba(253, 253, 253, 0.253);
+    background-color: rgb(61, 61, 61);
 
     .line-bars {
         top: 20px;
