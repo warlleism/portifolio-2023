@@ -19,8 +19,8 @@ const Footer = () => {
                 <img src={require('../image/icons/email-icon.png')} alt="" style={{ borderRadius: "20%" }} />
             </a>
             <a href={MyPdf} download="Currículo-dev" >
-                    <img src={require('../image/icons/curriculo-icon.png')} alt="" style={{ borderRadius: "20%" }} />
-                </a>
+                <img src={require('../image/icons/curriculo-icon.png')} alt="" style={{ borderRadius: "20%" }} />
+            </a>
         </div>
     )
 }

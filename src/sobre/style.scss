@@ -10,26 +10,125 @@
     flex-direction: column;
     justify-content: center;
 
-    div:nth-child(1) {
-        font-weight: 400;
-        font-size: 1.4rem;
-        text-align: center;
-        margin-bottom: 50px;
-    }
-
-    div:nth-child(2) {
-        width: 35%;
-        font-weight: 100;
-        font-size: 1.1rem;
-        text-align: center;
-    }
-
     span {
         bottom: 100px;
         font-size: 3rem;
         cursor: pointer;
         position: absolute;
         animation: arrow 2s infinite;
+    }
+
+    .container-info-sobre {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        align-items: flex-end;
+        justify-content: center;
+
+        .container-name {
+            width: 400px;
+            display: flex;
+            padding: 30px 20px;
+            border-radius: 5px;
+            align-items: center;
+            flex-direction: column;
+            box-sizing: border-box;
+            justify-content: center;
+            background-color: #1D1D1D;
+
+            div {
+                width: 100%;
+                text-align: start;
+            }
+
+            .line {
+                height: 1px;
+                margin: 30px 0;
+                background-color: rgba(209, 209, 209, 0.103);
+            }
+
+            .name {
+                display: flex;
+                flex-direction: column;
+
+                div:nth-child(1) {
+                    font-weight: 100;
+                    margin-bottom: 7px;
+                }
+
+                div:nth-child(2) {
+                    font-size: 1.7rem;
+                    font-weight: 700;
+                }
+            }
+
+            .sobre-mim {
+                div:nth-child(1) {
+                    font-weight: 900;
+                    font-size: .8rem;
+                    margin-bottom: 7px;
+                }
+
+                div:nth-child(2) {
+                    font-weight: 300;
+                }
+
+            }
+
+        }
+
+        .container-contact-skill {
+            display: flex;
+            margin-left: 20px;
+            flex-direction: column;
+
+            .container-contact {
+                width: 500px;
+                width: 100%;
+                display: flex;
+                margin-bottom: 10px;
+                flex-direction: row;
+                justify-content: space-between;
+
+                a {
+                    padding: 20px 15px;
+                    display: flex;
+                    align-items: center;
+                    border-radius: 10px;
+                    box-sizing: border-box;
+                    justify-content: center;
+                    background-color: #1D1D1D;
+
+                    img {
+                        max-width: 80%;
+                    }
+                }
+            }
+
+            .container-skills {
+                width: 500px;
+                height: 200px;
+                padding: 30px;
+                display: flex;
+                flex-wrap: wrap;
+                border-radius: 5px;
+                background-color: #1D1D1D;
+                justify-content: space-between;
+
+
+                .content-skill {
+                    display: flex;
+                    width: 140px;
+                    height: 20px;
+
+                    img {
+                        max-width: 20px;
+                        margin-right: 5px;
+                    }
+                }
+            }
+        }
+
     }
 }
 
@@ -49,36 +148,114 @@
 
 }
 
-@media screen and (max-width: 918px) {
-
+@media screen and (max-width: 976px) {
     .main-sobre {
+        margin-bottom: 100px;
 
-        div:nth-child(2) {
-            width: 70%;
-            font-size: 1rem;
+        span {
+            display: none;
+        }
+
+        .container-info-sobre {
+            width: 90%;
+
+            .container-name {
+                width: 100%;
+                margin-bottom: 30px;
+            }
+
+            .container-contact-skill {
+                width: 100%;
+                margin: 0;
+
+                .container-contact {
+                    width: 100%;
+                    margin: 10px 0;
+                }
+
+                .container-skills {
+                    width: 100%;
+                    padding: 0;
+                    height: 100%;
+
+                    .content-skill {
+                        padding: 20px;
+                        width: 200px;
+                        margin: 30px;
+                    }
+                }
+            }
+        }
+    }
+
+}
+
+@media screen and (max-width: 866px) {
+    .main-sobre {
+        margin-top: 100px;
+    }
+}
+
+@media screen and (max-width: 576px) {
+    .main-sobre {
+        margin-top: 100px;
+        margin-bottom: 200px;
+
+        .container-skills {
+            .content-skill {
+                width: 120px !important;
+                margin: 0 !important;
+                font-size: .7rem !important;
+                height: 20px !important;
+                margin-top: 20px !important;
+                margin-bottom: 30px !important;
+            }
         }
     }
 }
 
-@media screen and (max-width: 574px) {
-
+@media screen and (max-width: 480px) {
     .main-sobre {
-
-
-        div:nth-child(2) {
-            width: 90%;
-            font-size: 1rem;
+        margin-top: 200px;
+        .container-name {
+            .sobre-mim {
+                div:nth-child(2) {
+                    font-size: .8rem;
+                }
+            }
         }
     }
 }
 
-@media screen and (max-width: 412px) {
-
+@media screen and (max-width: 384px) {
     .main-sobre {
+        margin-top: 300px;
+        margin-bottom: 300px;
 
-        div:nth-child(2) {
-            width: 90%;
-            font-size: 0.8rem;
+        .container-name {
+            .sobre-mim {
+                div:nth-child(2) {
+                    font-size: .8rem;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 320px) {
+    .main-sobre {
+        margin-top: 300px;
+
+        .container-name {
+            .sobre-mim {
+                div:nth-child(2) {
+                    font-size: .8rem;
+                }
+            }
+        }
+
+        .content-skill {
+            padding: 0px !important;
         }
     }
 }
