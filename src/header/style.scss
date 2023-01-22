@@ -6,8 +6,24 @@
     font-size: 1.4rem;
     text-align: center;
     letter-spacing: 4px;
+    animation: contentName 5s infinite ;
 }
 
+@keyframes contentName {
+
+    0% {
+        color: #F2BD0C;
+    }
+
+    50% {
+        color: #ffe605;
+    }
+
+    100% {
+        color: #F2BD0C;
+    }
+
+}
 
 
 
