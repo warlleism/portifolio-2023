@@ -230,7 +230,14 @@
 
         .father-container-content {
             margin: 0;
+
+            div:nth-child(3) {
+                p {
+                    width: 100% !important;
+                }
+            }
         }
+
         .right {
             margin: 0;
         }
