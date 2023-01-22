@@ -217,11 +217,18 @@
 @media screen and (max-width: 480px) {
     .main-sobre {
         margin-top: 200px;
+
         .container-name {
             .sobre-mim {
                 div:nth-child(2) {
                     font-size: .8rem;
                 }
+            }
+        }
+
+        .container-contact {
+            a {
+                padding: 10px 5px  !important;
             }
         }
     }
