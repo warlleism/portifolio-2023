@@ -5,7 +5,7 @@ const Content = [
         tecn: "Figma",
         desc: "Trabalho pessoal de uma landing page para o serviço de streaming 'HBO MAX'.",
         img: require('../image/the-batman.png'),
-        url: "https://www.instagram.com/p/CnXeUZOvmK8/"
+        url: "https://www.instagram.com/p/CnS_wRWjFF5/"
     },
     {
         titulo: "Web App",
@@ -66,7 +66,7 @@ const Content = [
         tecn: "Figma",
         desc: "Trabalho pessoal de uma landing page para universidade fictícia.",
         img: require('../image/landing-page.png'),
-        url: "https://www.instagram.com/p/CnXeUZOvmK8/"
+        url: "https://www.instagram.com/p/Ckxwr63OvrP/"
     },
     {
         titulo: "Web App",

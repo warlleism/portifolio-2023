@@ -1,6 +1,8 @@
 import React from "react";
 import { useState } from "react";
+import MyPdf from "../image/icons/curriculo-dev-2023.pdf"
 import './style.scss'
+
 
 const Navbar = () => {
 
@@ -46,6 +48,12 @@ const Navbar = () => {
                 </a>
                 <a href="https://www.instagram.com/warlleimartinsdev/" target="_blank">
                     <img src={require('../image/icons/instagram-icon.png')} alt="" />
+                </a>
+                <a href="mailto:warlleimartinsdev@outlook.com" target="_blank" >
+                    <img src={require('../image/icons/email-icon.png')} alt="" style={{ borderRadius: "20%" }} />
+                </a>
+                <a href={MyPdf} download >
+                    <img src={require('../image/icons/curriculo-icon.png')} alt="" style={{ borderRadius: "20%" }} />
                 </a>
             </div>
         </div>
