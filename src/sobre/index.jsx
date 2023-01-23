@@ -78,7 +78,7 @@ const Sobre = () => {
                         </div>
                         <div className="content-skill">
                             <img src={require('../image/icons/github.png')} alt="" />
-                            <div>github</div>
+                            <div>Github</div>
                         </div>
                         <div className="content-skill">
                             <img src={require('../image/icons/figma.png')} alt="" />

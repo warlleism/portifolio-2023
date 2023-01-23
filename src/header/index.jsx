@@ -4,7 +4,7 @@ import './style.scss'
 const Header = () => {
     return (
         <div className="main-header">
-            WARLLEI MARTINS
+            DESENVOLVEDOR
         </div>
     )
 }
