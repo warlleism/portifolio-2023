@@ -27,6 +27,7 @@
 
         .container-name {
             width: 360px;
+            height: 500px;
             display: flex;
             padding: 30px 20px;
             border-radius: 5px;
@@ -117,14 +118,21 @@
                 display: flex;
                 flex-wrap: wrap;
                 border-radius: 5px;
+                align-items: center;
                 background-color: #1D1D1D;
                 justify-content: space-between;
 
 
                 .content-skill {
-                    display: flex;
-                    width: 140px;
+                    width: 116px;
                     height: 20px;
+                    padding: 10px;
+                    display: flex;
+                    align-items: center;
+                    font-size: .8rem;
+                    border-radius: 100px;
+                    justify-content: center;
+                    background-color: #313131;
 
                     img {
                         max-width: 20px;
@@ -155,7 +163,8 @@
 
 @media screen and (max-width: 976px) {
     .main-sobre {
-        margin-bottom: 100px;
+        margin-bottom: 200px;
+        margin-top: 200px;
 
         span {
             display: none;
@@ -184,7 +193,6 @@
                     height: 100%;
 
                     .content-skill {
-                        padding: 20px;
                         width: 200px;
                         margin: 30px;
                     }
@@ -195,13 +203,8 @@
 
 }
 
-@media screen and (max-width: 866px) {
-    .main-sobre {
-        margin-top: 100px;
-    }
-}
 
-@media screen and (max-width: 576px) {
+@media screen and (max-width: 622px) {
     .main-sobre {
         margin-top: 100px;
         margin-bottom: 200px;
@@ -239,26 +242,18 @@
     }
 }
 
-@media screen and (max-width: 384px) {
+
+
+@media screen and (max-width: 382px) {
     .main-sobre {
-        margin-top: 300px;
-        margin-bottom: 300px;
+        margin-top: 100px;
 
         .container-name {
-            .sobre-mim {
-                div:nth-child(2) {
-                    font-size: .8rem;
+            .name{
+                div:nth-child(2){
+                    font-size: 1rem !important;
                 }
             }
-        }
-    }
-}
-
-@media screen and (max-width: 320px) {
-    .main-sobre {
-        margin-top: 300px;
-
-        .container-name {
             .sobre-mim {
                 div:nth-child(2) {
                     font-size: .8rem;

@@ -3,7 +3,6 @@ import './global/style.css'
 import Header from './header';
 import Sobre from './sobre';
 import Navbar from './navbar';
-import Footer from './footer';
 
 function App() {
 
@@ -13,7 +12,6 @@ function App() {
       <Header />
       <Sobre />
       <Main />
-      <Footer />
     </div>
   );
 }
