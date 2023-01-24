@@ -90,6 +90,14 @@ const Content = [
         img: require('../image/nerdstore2.png'),
         url: "https://github.com/warlleism/Nerdstore"
     },
+    {
+        class: "right",
+        titulo: "UI UX Design",
+        tecn: "Figma",
+        desc: "Projeto pessoal de uma landing page com temática do game The Witcher.",
+        img: require('../image/witcher.png'),
+        url: "https://www.instagram.com/p/CnvlEAlL2kN/"
+    },
 ]
 
 export default Content;

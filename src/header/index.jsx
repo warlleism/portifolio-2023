@@ -4,7 +4,7 @@ import './style.scss'
 const Header = () => {
     return (
         <div className="main-header">
-            DESENVOLVEDOR
+            DESENVOLVEDOR FRONT END
         </div>
     )
 }

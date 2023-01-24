@@ -15,6 +15,9 @@ const Sobre = () => {
             <div className="container-info-sobre">
 
                 <div className="container-name">
+                    <div className="desenho-foto">
+                        <img src={require('../image/icons/desenho.jpg')} alt="" />
+                    </div>
                     <div className="name">
                         <div>
                             MEU NOME
@@ -26,12 +29,13 @@ const Sobre = () => {
                     <div className="line"></div>
                     <div className="sobre-mim">
                         <div>SOBRE MIM</div>
-                        <div>Olá! meu nome é Warllei Martins, tenho 26 anos e sou do Espirito Santo. Curso Análise e Desenvolvimento de Sistemas pela "Universidade Vila Velha". Sou um desenvolvedor apaixonado pela programação e com grandes ambições dentro do mercado de ti. com profundo interesse em conhecer, aprender e me desenvolver, venho me dedicado ao mundo da técnologia desde janeiro de 2021.</div>
+                        <div>Olá! meu nome é Warllei Martins, tenho 26 anos e sou do Espirito Santo. Curso Análise e Desenvolvimento de Sistemas pela "Universidade Vila Velha". Sou um desenvolvedor apaixonado pela programação e com grandes ambições dentro do mercado de ti. com profundo interesse em conhecer, aprender e me desenvolver, venho me dedicado ao mundo da tecnologia desde janeiro de 2021.</div>
                     </div>
                 </div>
 
 
                 <div className="container-contact-skill">
+
 
                     <div className="container-contact">
                         <a href="https://github.com/warlleism" target="_blank">
@@ -89,7 +93,7 @@ const Sobre = () => {
                             <div>MySql</div>
                         </div>
                     </div>
-                    
+
                 </div>
             </div>
 

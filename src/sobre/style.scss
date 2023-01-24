@@ -12,6 +12,7 @@
 
     span {
         bottom: 100px;
+        left: 100px;
         font-size: 3rem;
         cursor: pointer;
         position: absolute;
@@ -27,7 +28,6 @@
 
         .container-name {
             width: 360px;
-            height: 500px;
             display: flex;
             padding: 30px 20px;
             border-radius: 5px;
@@ -36,6 +36,20 @@
             box-sizing: border-box;
             justify-content: center;
             background-color: #1D1D1D;
+
+            .desenho-foto {
+                width: 100%;
+                display: flex;
+                margin-bottom: 30px;
+                justify-content: center;
+                img {
+                    width: 120px;
+                    height: 160px;
+                    margin-left: 10px;
+                    border-radius: 100%;
+                    border: solid 4px rgb(255, 255, 255);
+                }
+            }
 
             div {
                 width: 100%;
@@ -120,7 +134,8 @@
                 border-radius: 5px;
                 align-items: center;
                 background-color: #1D1D1D;
-                justify-content: space-between;
+                justify-content: space-around;
+
 
 
                 .content-skill {
@@ -128,8 +143,8 @@
                     height: 20px;
                     padding: 10px;
                     display: flex;
-                    align-items: center;
                     font-size: .8rem;
+                    align-items: center;
                     border-radius: 100px;
                     justify-content: center;
                     background-color: #313131;
@@ -243,17 +258,17 @@
 }
 
 
-
 @media screen and (max-width: 382px) {
     .main-sobre {
-        margin-top: 100px;
+        margin-top: 200px;
 
         .container-name {
-            .name{
-                div:nth-child(2){
+            .name {
+                div:nth-child(2) {
                     font-size: 1rem !important;
                 }
             }
+
             .sobre-mim {
                 div:nth-child(2) {
                     font-size: .8rem;
