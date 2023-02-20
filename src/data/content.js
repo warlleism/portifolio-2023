@@ -105,6 +105,14 @@ const Content = [
         img: require('../image/selecionarh.png'),
         url: "https://www.instagram.com/p/Co48T8Uroh6/"
     },
+    {
+        class: "right",
+        titulo: "UI UX Design",
+        tecn: "Figma",
+        desc: "Projeto pessoal de uma home page sobre carros",
+        img: require('../image/flatout.png'),
+        url: "https://silly-crepe-e1d0c6.netlify.app/"
+    },
 ]
 
 export default Content;
