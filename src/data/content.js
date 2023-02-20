@@ -98,6 +98,13 @@ const Content = [
         img: require('../image/witcher.png'),
         url: "https://www.instagram.com/p/CnvlEAlL2kN/"
     },
+    {
+        titulo: "UI UX Design",
+        tecn: "Figma",
+        desc: "Projeto pessoal de um redesign do site seleciona.",
+        img: require('../image/selecionarh.png'),
+        url: "https://www.instagram.com/p/Co48T8Uroh6/"
+    },
 ]
 
 export default Content;

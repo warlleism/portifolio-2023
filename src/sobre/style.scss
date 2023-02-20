@@ -36,18 +36,21 @@
             box-sizing: border-box;
             justify-content: center;
             background-color: #1D1D1D;
+            border: #F2BD0C solid 2px;
+
 
             .desenho-foto {
                 width: 100%;
                 display: flex;
                 margin-bottom: 30px;
                 justify-content: center;
+
                 img {
-                    width: 120px;
-                    height: 160px;
+                    width: 140px;
+                    height: 140px;
                     margin-left: 10px;
                     border-radius: 100%;
-                    border: solid 4px rgb(255, 255, 255);
+                    border: solid 4px #F2BD0C;
                 }
             }
 
@@ -71,7 +74,6 @@
                     font-size: .7rem;
                     font-weight: 300;
                     margin-bottom: 7px;
-
                 }
 
                 div:nth-child(2) {
@@ -83,6 +85,7 @@
 
             .sobre-mim {
                 div:nth-child(1) {
+                    color: #F2BD0C;
                     font-weight: 900;
                     font-size: .8rem;
                     margin-bottom: 7px;
@@ -102,6 +105,7 @@
             margin-left: 20px;
             flex-direction: column;
 
+
             .container-contact {
                 width: 500px;
                 width: 100%;
@@ -111,13 +115,15 @@
                 justify-content: space-between;
 
                 a {
-                    padding: 20px 15px;
+                    width: 70px;
+                    height: 70px;
                     display: flex;
                     align-items: center;
                     border-radius: 10px;
                     box-sizing: border-box;
                     justify-content: center;
                     background-color: #1D1D1D;
+                    border: solid 2px #F2BD0C;
 
                     img {
                         max-width: 80%;
@@ -135,8 +141,7 @@
                 align-items: center;
                 background-color: #1D1D1D;
                 justify-content: space-around;
-
-
+                border: solid 2px #F2BD0C;
 
                 .content-skill {
                     width: 116px;
@@ -148,6 +153,7 @@
                     border-radius: 100px;
                     justify-content: center;
                     background-color: #313131;
+                    border: solid 2px #F2BD0C;
 
                     img {
                         max-width: 20px;
@@ -275,9 +281,16 @@
             }
         }
 
+        .container-contact {
+
+            a {
+                width: 60px !important;
+                height: 60px !important;
+            }
+        }
+
         .content-skill {
             padding: 0px !important;
         }
     }
 }
-
