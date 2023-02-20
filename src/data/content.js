@@ -101,15 +101,21 @@ const Content = [
     {
         titulo: "UI UX Design",
         tecn: "Figma",
+        desc: "Projeto pessoal de uma landing page com temática do game The last Of Us.",
+        img: require('../image/thelast.png'),
+        url: "https://www.linkedin.com/feed/update/urn:li:activity:7025290329037619200/"
+    },
+    {
+        class: "right",
+        tecn: "Figma",
         desc: "Projeto pessoal de um redesign do site seleciona.",
         img: require('../image/selecionarh.png'),
         url: "https://www.instagram.com/p/Co48T8Uroh6/"
     },
     {
-        class: "right",
-        titulo: "UI UX Design",
-        tecn: "Figma",
-        desc: "Projeto pessoal de uma home page sobre carros",
+        titulo: "Web App",
+        tecn: "HTML | CSS",
+        desc: "Projeto pessoal de uma home page sobre carros.",
         img: require('../image/flatout.png'),
         url: "https://silly-crepe-e1d0c6.netlify.app/"
     },

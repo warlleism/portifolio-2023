@@ -97,7 +97,7 @@ const Sobre = () => {
                 </div>
             </div>
 
-            <span class="material-symbols-outlined" onClick={() => scrollScreen()}>
+            <span class="material-symbols-outlined" style={{ color: "#F2BD0C" }} onClick={() => scrollScreen()}>
                 arrow_downward
             </span>
         </div>
