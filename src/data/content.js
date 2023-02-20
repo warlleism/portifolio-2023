@@ -106,6 +106,7 @@ const Content = [
         url: "https://www.linkedin.com/feed/update/urn:li:activity:7025290329037619200/"
     },
     {
+        titulo: "UI UX Design",
         class: "right",
         tecn: "Figma",
         desc: "Projeto pessoal de um redesign do site seleciona.",

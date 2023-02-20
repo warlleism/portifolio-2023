@@ -267,6 +267,8 @@
 @media screen and (max-width: 400px) {
     .main-sobre {
 
+        height: 100%;
+
         .container-name {
             .name {
                 div:nth-child(2) {
@@ -289,8 +291,6 @@
             }
         }
 
-        .content-skill {
-            padding: 0px !important;
-        }
+       
     }
 }
