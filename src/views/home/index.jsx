@@ -1,7 +1,7 @@
 import Header from "../header";
 import Background from "../../assets/img/background.png";
 import Mobile from "../../assets/img/mobile-content.png";
-import "../../styles/homeStyles.css";
+import '../../styles/textStyle.css'
 
 const Home = () => {
   return (

@@ -1,0 +1,49 @@
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Antonio:wght@100;200;300;400;500;600;700&display=swap");
+
+.text {
+  font-family: "Bebas Neue", sans-serif;
+}
+
+.roboto {
+  font-family: "Roboto", sans-serif;
+}
+
+.antonia {
+  font-family: "Antonio", sans-serif;
+}
+
+.borderAnimation {
+  border: 2px solid #38075e;
+  animation: border 2s infinite ease-in-out;
+}
+
+.colorAnimation {
+  color: #38075e;
+  animation: color 2s infinite ease-in-out;
+}
+
+@keyframes border {
+  0% {
+    border: 2px solid #38075e;
+  }
+  50% {
+    border: 2px solid #9000ff;
+  }
+  100% {
+    border: 2px solid #38075e;
+  }
+}
+
+@keyframes color {
+  0% {
+    color: #38075e;
+  }
+  50% {
+    color: #9000ff;
+  }
+  100% {
+    color: #38075e;
+  }
+}
