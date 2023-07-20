@@ -18,7 +18,7 @@ const Skills = () => {
   const dataFilterSixDown = Data.filter((e) => e.id >= 6);
 
   return (
-    <div className="w-[100%] flex flex-col justify-center items-center ">
+    <div id="skills" className="w-[100%] flex flex-col justify-center items-center ">
       <div style={{ color: "#fff" }} className="text-[2.5rem] mb-[50px] text">
         Skills
       </div>
@@ -33,7 +33,6 @@ const Skills = () => {
                 className="flex items-center justify-center bg-[#0A0A0D] w-[130px] h-[130px] rounded-[100%] relative borderAnimation"
               >
                 <div
-                  id={`name-linguage-${index}`}
                   style={{
                     transition: "0.3s ease-in-out",
                     bottom: hoveredContainerIndex === index ? "-50px" : "0px",
@@ -61,7 +60,6 @@ const Skills = () => {
                 className="flex items-center justify-center bg-[#0A0A0D] w-[130px] h-[130px] rounded-[100%] relative borderAnimation"
               >
                 <div
-                  id={`name-linguage-${index + dataFilterSixUp.length}`}
                   style={{
                     transition: "0.3s ease-in-out",
                     bottom:

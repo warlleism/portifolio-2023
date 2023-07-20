@@ -1,6 +1,7 @@
 import "./App.css";
 import About from "./views/about";
 import Home from "./views/home";
+import Projects from "./views/projetcs";
 import Skills from "./views/skills";
 
 function App() {
@@ -9,6 +10,7 @@ function App() {
       <Home />
       <About />
       <Skills />
+      <Projects />
     </div>
   );
 }

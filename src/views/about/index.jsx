@@ -4,7 +4,7 @@ import "../../styles/textStyle.css";
 
 const About = () => {
   return (
-    <div className="h-screen w-[100%] bg-green flex justify-center items-center">
+    <div id="about" className="h-screen w-[100%] bg-green flex justify-center items-center">
       <div className=" flex bg-[#0A0A0D] border-[1px] rounded border-solid w-[80%] h-[80%] borderAnimation">
         <div className="flex items-center justify-center w-[50%] h-[100%] ">
           <div className="w-[600px] h-[500px] flex flex-col items-center justify-center relative">

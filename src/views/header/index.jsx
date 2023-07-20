@@ -39,7 +39,7 @@ const Header = () => {
   return (
     <div
       id="header"
-      className="flex items-center justify-center h-20 w-[100%] fixed top-0 transition-all py-14"
+      className="flex items-center z-10 justify-center h-20 w-[100%] fixed top-0 transition-all py-14"
       style={{
         transform: scrollParaBaixo ? "translateY(-400%)" : "translateY(0%)",
       }}
@@ -49,27 +49,27 @@ const Header = () => {
       </div>
       <ul className="flex items-center justify-between  w-[20%]">
         <li className="text-[#fff] text-[1.3rem]">
-          <a href="" className="text">
+          <a href="#home" className="text">
             Ínicio
           </a>
         </li>
         <li className="text-[#fff] text-[1.3rem]">
-          <a href="" className="text">
+          <a href="#about" className="text">
             Sobre
           </a>
         </li>
         <li className="text-[#fff] text-[1.3rem]">
-          <a href="" className="text">
+          <a href="#skills" className="text">
             Skills
           </a>
         </li>
         <li className="text-[#fff] text-[1.3rem]">
-          <a href="" className="text">
+          <a href="#projects" className="text">
             Projetos
           </a>
         </li>
         <li className="text-[#fff] text-[1.3rem]">
-          <a href="" className="text">
+          <a href="#footer" className="text">
             Contato
           </a>{" "}
         </li>

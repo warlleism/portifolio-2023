@@ -27,7 +27,7 @@ const Home = () => {
       }}
     >
       <Header />
-      <div className="flex h-[100%]">
+      <div id="home" className="flex h-[100%]">
         <div className="w-[50%] justify-center flex flex-col items-start box-border  pl-40 ">
           <div className=" h-[300px] flex flex-col items-center justify-center">
             <div className="text-[#fff] text-[5rem] font-bold text mb-[-30px] w-[800px]">
