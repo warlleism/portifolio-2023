@@ -44,10 +44,10 @@ const Header = () => {
         transform: scrollParaBaixo ? "translateY(-400%)" : "translateY(0%)",
       }}
     >
-      <div className="text-3xl font-semibold w-[63%] text-[#fff] text tracking-[3px]">
+      <div className="text-3xl font-semibold w-[63%] text-[#fff] text tracking-[3px] max-[880px]:w-[100%] max-[880px]:text-center ">
         Warllei Martins
       </div>
-      <ul className="flex items-center justify-between  w-[20%]">
+      <ul className="flex items-center justify-between w-[20%] max-[1262px]:w-[30%] max-[880px]:hidden ">
         <li className="text-[#fff] text-[1.3rem]">
           <a href="#home" className="text">
             Ínicio

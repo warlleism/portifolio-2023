@@ -5,6 +5,8 @@ import Computer from "../../assets/img/icons/computer.png";
 import Github from "../../assets/img/icons/github.png";
 
 const Projects = () => {
+  const itemsPerPage = 6;
+  const [currentPage, setCurrentPage] = useState(1);
   const [hoveredContainerIndex, setHoveredContainerIndex] = useState(null);
 
   const handleMouseEnter = (index) => {
@@ -16,20 +18,28 @@ const Projects = () => {
     setHoveredContainerIndex(null);
   };
 
+  const handlePageChange = (page) => {
+    setCurrentPage(page);
+  };
+
+  const totalPages = Math.ceil(Data.length / itemsPerPage);
+  const startIndex = (currentPage - 1) * itemsPerPage;
+  const displayedData = Data.slice(startIndex, startIndex + itemsPerPage);
+
   return (
     <div
       id="projects"
-      className="w-[100%] flex flex-col justify-center items-center "
+      className="w-[100%] flex flex-col justify-center items-center"
     >
       <div
         style={{ color: "#fff" }}
-        className="text-[2.5rem] mb-[50px] text-center w-[100%] text "
+        className="text-[2.5rem] mb-[50px] text-center w-[100%] text"
       >
         Projetos
       </div>
       <div className="flex flex-col justify-center items-center w-[100%] m-auto  mb-[100px]">
         <div className="flex flex-row flex-wrap justify-between items-center w-[70%]">
-          {Data.map((e, index) => {
+          {displayedData.map((e, index) => {
             return (
               <div
                 onMouseEnter={() => handleMouseEnter(index)}
@@ -38,7 +48,7 @@ const Projects = () => {
                 className="flex box px-5 flex-col items-center justify-center bg-[#0A0A0D] w-[400px] h-[500px] rounded-[5px] mb-[50px] borderAnimation"
               >
                 <div className="w-[100%] h-[45%]  mt-2 ">
-                  <img src={e.img} alt="" className="w-[100%] h-[100%]  " />
+                  <img src={e.img} alt="" className="w-[100%] h-[100%]" />
                 </div>
 
                 <div className="w-[100%] flex justify-between items-center  mt-2">
@@ -94,6 +104,19 @@ const Projects = () => {
               </div>
             );
           })}
+        </div>
+        <div className="pagination">
+          {Array.from({ length: totalPages }, (_, i) => i + 1).map((page) => (
+            <button
+              key={page}
+              onClick={() => handlePageChange(page)}
+              className={`${
+                currentPage === page ? "bg-[#9000ff]" : "bg-[#210936]"
+              } bg-[#210936] border-2 border-solid border-[#9000ff]  text-[#fff] py-3 px-5 mr-5 rounded-[5px] text-[1.5rem]`}
+            >
+              {page}
+            </button>
+          ))}
         </div>
       </div>
     </div>
