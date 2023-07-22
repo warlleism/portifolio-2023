@@ -54,12 +54,12 @@ export const Data = [
   },
   {
     id: 8,
-    name: "Next Js",
+    name: "Node Js",
     img: nodeIcon,
   },
   {
     id: 9,
-    name: "Next Js",
+    name: "MySql",
     img: mysqlIcon,
   },
   {

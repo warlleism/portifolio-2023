@@ -1,12 +1,13 @@
 import { useState } from "react";
 import { Data } from "./skills";
 import "../../styles/textStyle.css";
+import "./style.scss"; 
 
 const Skills = () => {
   const [hoveredContainerIndex, setHoveredContainerIndex] = useState(null);
 
   const handleMouseEnter = (index) => {
-    console.log(index)
+    console.log(index);
     setHoveredContainerIndex(index);
   };
 
@@ -18,19 +19,19 @@ const Skills = () => {
   const dataFilterSixDown = Data.filter((e) => e.id >= 6);
 
   return (
-    <div id="skills" className="w-[100%] flex flex-col justify-center items-center ">
-      <div style={{ color: "#fff" }} className="text-[2.5rem] mb-[50px] text">
+    <div id="skills" className="mainContainerSkills">
+      <div className="containerTextSkills">
         Skills
       </div>
-      <div className="flex flex-col justify-center items-center w-[70%] m-auto h-[400px] mb-[100px]">
-        <div className="flex flex-row justify-between h-[300px] items-center w-[100%]">
+      <div className="containerFlexSkills">
+        <div className="containerRowSkills">
           {dataFilterSixUp.map((e, index) => {
             return (
               <div
                 onMouseEnter={() => handleMouseEnter(index)}
                 onMouseLeave={handleMouseLeave}
                 key={e.id}
-                className="flex items-center justify-center bg-[#0A0A0D] w-[130px] h-[130px] rounded-[100%] relative borderAnimation"
+                className="containerItemSkills rainbow"
               >
                 <div
                   style={{
@@ -38,17 +39,17 @@ const Skills = () => {
                     bottom: hoveredContainerIndex === index ? "-50px" : "0px",
                     opacity: hoveredContainerIndex === index ? 1 : 0,
                   }}
-                  className="absolute bottom-[0px] text-[1.4rem] text text-[#fff]"
+                  className="containerNameSkills text"
                 >
                   {e.name}
                 </div>
-                <img src={e.img} alt="" className="max-w-[50%]" />
+                <img src={e.img} alt="" className="containerImageSkills" />
               </div>
             );
           })}
         </div>
 
-        <div className="flex flex-row justify-between h-[300px] items-center w-[100%]">
+        <div className="containerRowSkills">
           {dataFilterSixDown.map((e, index) => {
             return (
               <div
@@ -57,7 +58,7 @@ const Skills = () => {
                 }
                 onMouseLeave={handleMouseLeave}
                 key={e.id}
-                className="flex items-center justify-center bg-[#0A0A0D] w-[130px] h-[130px] rounded-[100%] relative borderAnimation"
+                className="containerItemSkills rainbow"
               >
                 <div
                   style={{
@@ -71,11 +72,11 @@ const Skills = () => {
                         ? 1
                         : 0,
                   }}
-                  className="absolute bottom-[0px] text-[1.4rem] text text-[#fff]"
+                  className="containerNameSkills text"
                 >
                   {e.name}
                 </div>
-                <img src={e.img} alt="" className="max-w-[50%]" />
+                <img src={e.img} alt="" className="containerImageSkills" />
               </div>
             );
           })}

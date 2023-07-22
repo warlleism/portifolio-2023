@@ -20,8 +20,11 @@
 }
 
 .colorAnimation {
-  color: #38075e;
   animation: color 2s infinite ease-in-out;
+}
+
+.borderAnimation {
+  animation: border 2s infinite ease-in-out;
 }
 
 @keyframes border {
@@ -36,6 +39,7 @@
   }
 }
 
+
 @keyframes color {
   0% {
     color: #38075e;
@@ -45,5 +49,37 @@
   }
   100% {
     color: #38075e;
+  }
+}
+
+.rainbow {
+  --border-size: 0.3rem;
+  border: var(--border-size) solid transparent;
+  border-image: conic-gradient(
+      from var(--angle),
+      #9000ff 0deg 90deg,
+      #38075e 90deg 180deg,
+      #9000ff 180deg 270deg,
+      #38075e 270deg 360deg
+    )
+    1 stretch;
+  background: rgb(255 255 255 / var(--opacity));
+}
+
+@supports (background: paint(houdini)) {
+  @property --angle {
+    syntax: "<angle>";
+    initial-value: 0deg;
+    inherits: false;
+  }
+
+  @keyframes rotate {
+    to {
+      --angle: 360deg;
+    }
+  }
+
+  .rainbow {
+    animation: rotate 4s linear infinite;
   }
 }
