@@ -40,7 +40,7 @@ const Projects = () => {
                 onMouseEnter={() => handleMouseEnter(index)}
                 onMouseLeave={handleMouseLeave}
                 key={e.id}
-                className="my-custom-card"
+                className="my-custom-card borderAnimation"
               >
                 <div className="my-custom-image-wrapper">
                   <img src={e.img} alt="" className="my-custom-image" />

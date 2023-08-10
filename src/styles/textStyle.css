@@ -52,6 +52,10 @@
   }
 }
 
+.iosRainbow{
+  border: solid 3px #9000ff ;
+}
+
 .rainbow {
   --border-size: 0.3rem;
   border: var(--border-size) solid transparent;
@@ -82,4 +86,5 @@
   .rainbow {
     animation: rotate 4s linear infinite;
   }
+  
 }

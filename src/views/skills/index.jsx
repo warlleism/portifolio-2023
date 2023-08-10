@@ -1,13 +1,16 @@
 import { useState } from "react";
 import { Data } from "./skills";
 import "../../styles/textStyle.css";
-import "./style.scss"; 
+import "./style.scss";
 
 const Skills = () => {
   const [hoveredContainerIndex, setHoveredContainerIndex] = useState(null);
 
+   const isIOS = /iPad|iPhone|iPod/.test(navigator.userAgent) && !window.MSStream;
+
+console.log(isIOS)
+
   const handleMouseEnter = (index) => {
-    console.log(index);
     setHoveredContainerIndex(index);
   };
 
@@ -20,9 +23,7 @@ const Skills = () => {
 
   return (
     <div id="skills" className="mainContainerSkills">
-      <div className="containerTextSkills">
-        Skills
-      </div>
+      <div className="containerTextSkills">Skills</div>
       <div className="containerFlexSkills">
         <div className="containerRowSkills">
           {dataFilterSixUp.map((e, index) => {
@@ -31,7 +32,7 @@ const Skills = () => {
                 onMouseEnter={() => handleMouseEnter(index)}
                 onMouseLeave={handleMouseLeave}
                 key={e.id}
-                className="containerItemSkills rainbow"
+                className={`containerItemSkills ${isIOS ? 'iosRainbow' : 'rainbow'}`}
               >
                 <div
                   style={{

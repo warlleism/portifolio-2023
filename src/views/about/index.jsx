@@ -10,7 +10,7 @@ const About = () => {
         <div className="about-content">
           <div className="text-container">
             <div className="text-name text">WARLLEI</div>
-            <div className="text-lastname text">MARTINS</div>
+            <div className="text-lastname text colorAnimation">MARTINS</div>
             <div className="text-job antonia text" style={{ fontWeight: 300 }}>
               DESENVOLVEDOR FRONT-END
             </div>
@@ -23,7 +23,7 @@ const About = () => {
             <img src={ItsImg} alt="" className="imageAnimation" />
           </div>
         </div>
-        <div className="image-container ">
+        <div className="image-container">
           <img src={Foto} className="containerImage borderAnimation" />
         </div>
       </div>

@@ -1,10 +1,11 @@
-import Header from "../header";
+import Header from "../navBar";
 import Background from "../../assets/img/background.png";
 import Mobile from "../../assets/img/mobile-content.png";
 import "../../styles/textStyle.css";
 import "./style.scss";
 
 const Home = () => {
+  
   return (
     <div
       className="mainContainerHome"
@@ -37,10 +38,7 @@ const Home = () => {
             </div>
             <div className="secondChildText text">IMPULSIONANDO O SUCESSO.</div>
           </div>
-          <div
-            style={{ fontWeight: "500" }}
-            className="lastChildText text"
-          >
+          <div style={{ fontWeight: "500" }} className="lastChildText text">
             SEMPRE COM FOCO NO DESENVOLVIMENTO ÁGIL COM BOAS PRÁTICAS EM BUSCA
             DE UMA BOA EXPERIÊNCIA PARA O USUÁRIO.
           </div>

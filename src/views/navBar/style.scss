@@ -1,0 +1,81 @@
+#header {
+
+  &.mainContainerHeader {
+    display: flex;
+    align-items: center;
+    z-index: 10;
+    justify-content: center;
+    height: 100px;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    transition: all;
+    transform: translateY(-400%);
+    transition: ease-in .5s;
+
+    @media (max-width: 1262px) {
+      width: 95%;
+      align-self: center;
+      margin: 0 auto;
+      left: 3%;
+    }
+
+    .containerName {
+      font-size: 2rem;
+      font-weight: 600;
+      width: 70%;
+      color: #fff;
+      letter-spacing: 3px;
+
+      @media (max-width: 880px) {
+        width: 100%;
+        text-align: center;
+      }
+
+
+    }
+
+    .text-3xl {
+      font-size: 2rem;
+      font-weight: 600;
+      width: 63%;
+      color: #fff;
+      letter-spacing: 3px;
+      text-align: left;
+
+      @media (max-width: 880px) {
+        width: 100%;
+        text-align: center;
+      }
+    }
+
+    ul {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      width: 20%;
+
+      @media (max-width: 1262px) {
+        width: 50%;
+      }
+
+      @media (max-width: 880px) {
+        display: none;
+      }
+
+      li {
+        color: #fff;
+        font-size: 1.3rem;
+
+        a {
+          text-decoration: none;
+          color: inherit;
+
+          &:hover {
+            text-decoration: underline;
+          }
+        }
+      }
+    }
+  }
+}

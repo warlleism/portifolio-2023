@@ -1,0 +1,48 @@
+/* Estilo para o elemento pai com a classe "flex-container" */
+.flex-container {
+  display: flex;
+  flex-direction: column;
+  height: 200px;
+  border-top: 2px solid #9000ff;
+  justify-content: center;
+  align-items: center;
+
+  & > .inner-container {
+    display: flex;
+    height: 100%;
+    gap: 10px;
+    justify-content: center;
+    align-items: center;
+
+    & > .text-copyright {
+      color: #fff;
+      font-size: 1.5rem;
+      max-width: 524px;
+      overflow: hidden;
+
+      @media (max-width: 468px) {
+        display: none;
+      }
+    }
+
+    & > .social-icons {
+      display: flex;
+      gap: 18px;
+
+      a {
+        width: 50px;
+        height: 50px;
+      }
+    }
+  }
+
+  & > .text-name {
+    font-size: 2.5rem;
+    margin-bottom: 50px;
+    text-align: center;
+    width: 100%;
+    color: #fff;
+    font-weight: 900;
+    letter-spacing: 2px;
+  }
+}
