@@ -5,6 +5,11 @@ import pj4 from "../../assets/img/projects/pj4.png";
 import pj5 from "../../assets/img/projects/pj5.png";
 import pj6 from "../../assets/img/projects/pj6.png";
 import pj7 from "../../assets/img/projects/pj7.png";
+import pj8 from "../../assets/img/projects/pj8.png";
+import pj9 from "../../assets/img/projects/pj9.png";
+import pj10 from "../../assets/img/projects/pj10.png";
+import pj11 from "../../assets/img/projects/pj11.png";
+import pj12 from "../../assets/img/projects/pj12.png";
 
 export const Data = [
   {
@@ -23,6 +28,7 @@ export const Data = [
     side: "Full-stack",
     skills: [
       { skill: "React Native" },
+      { skill: "ReactJs" },
       { skill: "TypeScript" },
       { skill: "Nodejs" },
       { skill: "MySql" },
@@ -45,7 +51,7 @@ export const Data = [
     link: "https://www.behance.net/gallery/170008457/Web-Design",
     git: "https://github.com/warlleism/the-last-of-us-page",
     skills: [
-      { skill: "React Js" },
+      { skill: "ReactJs" },
       { skill: "JavaScript" },
       { skill: "Figma" },
     ],
@@ -67,6 +73,7 @@ export const Data = [
     git: "https://github.com/warlleism/food-app-mobile",
     skills: [
       { skill: "React Native" },
+      { skill: "ReactJs" },
       { skill: "JavaScript" },
       { skill: "Figma" },
     ],
@@ -79,5 +86,51 @@ export const Data = [
     link: "https://www.behance.net/gallery/171520757/Web-Design",
     skills: [{ skill: "Figma" }, { skill: "Web Design" }],
     img: pj7,
+  },
+  {
+    id: 7,
+    name: "Web/Ui Design",
+    side: "Design",
+    link: "https://www.behance.net/gallery/170950771/Mobile-Design",
+    skills: [{ skill: "Figma" }, { skill: "Web Design" }],
+    img: pj8,
+  },
+  {
+    id: 8,
+    name: "Web/Ui Design",
+    side: "Design",
+    link: "https://www.behance.net/gallery/170872399/Web-Design",
+    skills: [{ skill: "Figma" }, { skill: "Web Design" }],
+    img: pj9,
+  },
+  {
+    id: 9,
+    name: "Web App",
+    side: "Front-end",
+    link: "https://www.behance.net/gallery/170124931/Web-Design",
+    git: "https://github.com/warlleism/blog-fullstack-nextjs-13-nodejs",
+    skills: [
+      { skill: "NextJs" },
+      { skill: "ReactJs" },
+      { skill: "JavaScript" },
+      { skill: "Figma" },
+    ],
+    img: pj10,
+  },
+  {
+    id: 10,
+    name: "Web/Ui Design",
+    side: "Design",
+    link: "https://www.behance.net/gallery/170008221/Landing-Page-Design",
+    skills: [{ skill: "Figma" }, { skill: "Web Design" }],
+    img: pj11,
+  },
+  {
+    id: 11,
+    name: "Web/Ui Design",
+    side: "Design",
+    link: "https://www.behance.net/gallery/176480859/Web-Design",
+    skills: [{ skill: "Figma" }, { skill: "Web Design" }],
+    img: pj12,
   },
 ];

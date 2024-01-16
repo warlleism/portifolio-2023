@@ -36,7 +36,9 @@ const Projects = () => {
         <div className="containerCard">
           {displayedData.map((e, index) => {
             return (
-              <div
+              <a
+                href={e.link}
+                target="_blank"
                 onMouseEnter={() => handleMouseEnter(index)}
                 onMouseLeave={handleMouseLeave}
                 key={e.id}
@@ -80,9 +82,7 @@ const Projects = () => {
                     )}
                   </div>
                 </div>
-
                 <div className="my-custom-description text">{e.side}</div>
-
                 <div
                   style={{ color: "#fff", fontWeight: "600", letterSpacing: 2 }}
                   className="my-custom-skills-title text"
@@ -97,7 +97,7 @@ const Projects = () => {
                     </div>
                   ))}
                 </div>
-              </div>
+              </a>
             );
           })}
         </div>
@@ -106,9 +106,8 @@ const Projects = () => {
             <button
               key={page}
               onClick={() => handlePageChange(page)}
-              className={`${
-                currentPage === page ? "transparent" : "bg-[#3f0a6d]"
-              } bg-[#210936] border-2 border-solid border-[#9000ff]  text-[#fff] py-3 px-5 mr-5 rounded-[5px] text-[1.5rem] rainbow`}
+              className={`${currentPage === page ? "transparent" : "bg-[#3f0a6d]"
+                } bg-[#210936] border-2 border-solid border-[#9000ff]  text-[#fff] py-3 px-5 mr-5 rounded-[5px] text-[1.5rem] rainbow`}
             >
               {page}
             </button>
