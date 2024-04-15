@@ -15,7 +15,7 @@ const About = () => {
               DESENVOLVEDOR FRONT-END
             </div>
             <div className="text-description antonia" style={{ fontWeight: 200 }}>
-              Desenvolvedor front-end júnior com 2 anos de experiência.
+              Desenvolvedor front-end júnior com 3 anos de experiência.
               Apaixonado por criar interfaces atraentes e funcionais. Sempre
               aprendendo e acompanhando tendências. Pronto para contribuir em
               projetos inovadores

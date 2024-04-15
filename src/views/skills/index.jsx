@@ -23,7 +23,7 @@ console.log(isIOS)
 
   return (
     <div id="skills" className="mainContainerSkills">
-      <div className="containerTextSkills">Skills</div>
+      <div className="containerTextSkills text">Skills</div>
       <div className="containerFlexSkills">
         <div className="containerRowSkills">
           {dataFilterSixUp.map((e, index) => {

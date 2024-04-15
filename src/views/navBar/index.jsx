@@ -51,7 +51,7 @@ const Header = () => {
       <ul>
         <li >
           <a href="#home" className="text">
-            Ínicio
+            Início
           </a>
         </li>
         <li>

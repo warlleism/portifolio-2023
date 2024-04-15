@@ -10,6 +10,7 @@ import pj9 from "../../assets/img/projects/pj9.png";
 import pj10 from "../../assets/img/projects/pj10.png";
 import pj11 from "../../assets/img/projects/pj11.png";
 import pj12 from "../../assets/img/projects/pj12.png";
+import pj13 from "../../assets/img/projects/pj13.jpg";
 
 export const Data = [
   {
@@ -132,5 +133,19 @@ export const Data = [
     link: "https://www.behance.net/gallery/176480859/Web-Design",
     skills: [{ skill: "Figma" }, { skill: "Web Design" }],
     img: pj12,
+  },
+  {
+    id: 12,
+    name: "Web App",
+    side: "Front-end",
+    git: "https://github.com/warlleism/next-14-auth-google-github",
+    link: "https://www.linkedin.com/feed/update/urn:li:activity:7175900264585981952/",
+    skills: [
+      { skill: "Next.JS 14" },
+      { skill: "React.Js" },
+      { skill: "TypeScript" },
+      { skill: "SSR & SSG" },
+    ],
+    img: pj13,
   },
 ];
