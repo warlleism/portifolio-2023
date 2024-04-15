@@ -11,12 +11,73 @@ import pj10 from "../../assets/img/projects/pj10.png";
 import pj11 from "../../assets/img/projects/pj11.png";
 import pj12 from "../../assets/img/projects/pj12.png";
 import pj13 from "../../assets/img/projects/pj13.jpg";
+import pj14 from "../../assets/img/projects/pj14.png";
+import pj15 from "../../assets/img/projects/pj15.png";
+import pj16 from "../../assets/img/projects/pj16.png";
 
 export const Data = [
   {
+    id: 12,
+    name: "Web App",
+    side: "Front-end",
+    git: "https://github.com/warlleism/next-14-auth-google-github",
+    link: "https://www.linkedin.com/feed/update/urn:li:activity:7175900264585981952/",
+    skills: [
+      { skill: "Next.JS 14" },
+      { skill: "React.Js" },
+      { skill: "TypeScript" },
+      { skill: "SSR & SSG" },
+      { skill: "HTML/CSS" },
+    ],
+    img: pj13,
+  },
+  {
+    id: 13,
+    name: "Web App",
+    side: "Front-end",
+    git: "https://github.com/warlleism/mf-website",
+    link: "https://mfmarmoresgranitos.netlify.app/",
+    skills: [
+      { skill: "React.Js" },
+      { skill: "TypeScript" },
+      { skill: "HTML/CSS" },
+    ],
+    img: pj14,
+  },
+  {
+    id: 14,
+    name: "Web App",
+    side: "Front-end",
+    git: "https://github.com/warlleism/front-end-smartfit-challenge",
+    link: "https://smartfit-challenge-wsm.netlify.app/",
+    skills: [
+      { skill: "React.Js" },
+      { skill: "TypeScript" },
+      { skill: "HTML/CSS" },
+    ],
+    img: pj15,
+  },
+  {
+    id: 15,
+    name: "Web App",
+    side: "Front-end",
+    git: "https://github.com/warlleism/warlleism-react-native-course-platform",
+    link: "https://www.linkedin.com/feed/update/urn:li:activity:7175056108984672256/",
+    skills: [
+      { skill: "React.Js" },
+      { skill: "TypeScript" },
+      { skill: "React Native" },
+      { skill: "SOLID" },
+      { skill: "Zustand" },
+      { skill: "AsyncStorage" },
+    ],
+    img: pj16,
+  },
+  {
     id: 0,
     name: "Web/Ui Design",
-    link: "https://www.behance.net/gallery/175635079/Web-Design",
+    link: "https://portifoliowarllei.netlify.app/",
+    git: "https://github.com/warlleism/portifolio-2023",
     side: "Design",
     skills: [{ skill: "Figma" }, { skill: "Web Design" }],
     img: pj1,
@@ -34,6 +95,7 @@ export const Data = [
       { skill: "Nodejs" },
       { skill: "MySql" },
       { skill: "Figma" },
+      { skill: "HTML/CSS" },
     ],
     img: pj2,
   },
@@ -55,6 +117,7 @@ export const Data = [
       { skill: "ReactJs" },
       { skill: "JavaScript" },
       { skill: "Figma" },
+      { skill: "HTML/CSS" },
     ],
     img: pj4,
   },
@@ -77,6 +140,7 @@ export const Data = [
       { skill: "ReactJs" },
       { skill: "JavaScript" },
       { skill: "Figma" },
+      { skill: "HTML/CSS" },
     ],
     img: pj6,
   },
@@ -133,19 +197,5 @@ export const Data = [
     link: "https://www.behance.net/gallery/176480859/Web-Design",
     skills: [{ skill: "Figma" }, { skill: "Web Design" }],
     img: pj12,
-  },
-  {
-    id: 12,
-    name: "Web App",
-    side: "Front-end",
-    git: "https://github.com/warlleism/next-14-auth-google-github",
-    link: "https://www.linkedin.com/feed/update/urn:li:activity:7175900264585981952/",
-    skills: [
-      { skill: "Next.JS 14" },
-      { skill: "React.Js" },
-      { skill: "TypeScript" },
-      { skill: "SSR & SSG" },
-    ],
-    img: pj13,
   },
 ];

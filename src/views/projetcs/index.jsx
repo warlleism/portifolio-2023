@@ -22,6 +22,8 @@ const Projects = () => {
 
   const handlePageChange = (page) => {
     setCurrentPage(page);
+    window.scrollTo(0, 2500)
+
   };
 
   const totalPages = Math.ceil(Data.length / itemsPerPage);
@@ -30,7 +32,6 @@ const Projects = () => {
 
   useEffect(() => {
     setLoading(true)
-
     setTimeout(() => {
       setLoading(false)
     }, 1000)
@@ -51,11 +52,15 @@ const Projects = () => {
                 onMouseEnter={() => handleMouseEnter(index)}
                 onMouseLeave={handleMouseLeave}
                 key={e.id}
+                style={{ position: 'relative' }}
                 className="my-custom-card borderAnimation"
               >
 
                 <div style={{
-                  position: 'absolute'
+                  position: "absolute",
+                  top: "50%",
+                  left: "50%",
+                  transform: "translate(-50%, -50%)",
                 }}>
                   <BarLoader
                     color={'#4D0188'}
