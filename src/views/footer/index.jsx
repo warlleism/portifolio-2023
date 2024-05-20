@@ -13,7 +13,7 @@ const Footer = () => {
       <div className="inner-container">
         <div className="social-icons">
           <a
-            href="https://api.whatsapp.com/send?phone=5527995804151&text=Meu%20Whatsapp"
+            href="https://api.whatsapp.com/send?phone=5527997964980&text=Meu%20Whatsapp"
             target="_blank"
             rel="noreferrer"
           >
