@@ -43,7 +43,7 @@ const Home = () => {
             DE UMA BOA EXPERIÊNCIA PARA O USUÁRIO.
           </div>
           <a
-            href="https://api.whatsapp.com/send?phone=5527995804151&text=Meu%20Whatsapp"
+            href="https://api.whatsapp.com/send?phone=5527997964980&text=Meu%20Whatsapp"
             target="_blank"
             rel="noreferrer"
             style={{ fontWeight: "600" }}
