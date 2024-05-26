@@ -9,7 +9,7 @@ import './style.scss';
 
 const Footer = () => {
   return (
-    <div className="flex-container" id="footer">
+    <div className="flex-container">
       <div className="inner-container">
         <div className="social-icons">
           <a

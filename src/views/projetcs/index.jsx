@@ -39,7 +39,7 @@ const Projects = () => {
 
   return (
     <div id="projects" className="mainConainerProjects">
-      <div style={{ color: "#fff" }} className="textTile text">
+      <div style={{ color: "#fff" }} className="textTitle text">
         Projetos
       </div>
       <div className="containerMainCard">

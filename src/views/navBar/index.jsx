@@ -70,9 +70,9 @@ const Header = () => {
           </a>
         </li>
         <li>
-          <a href="#footer" className="text">
+          <a href="#contacts" className="text">
             Contato
-          </a>{" "}
+          </a>
         </li>
       </ul>
     </div>

@@ -3,9 +3,11 @@ import Background from "../../assets/img/background.png";
 import Mobile from "../../assets/img/mobile-content.png";
 import "../../styles/textStyle.css";
 import "./style.scss";
+import Curriculo from '../../assets/Currículo.pdf'
+import { Typewriter } from 'react-simple-typewriter'
 
 const Home = () => {
-  
+
   return (
     <div
       className="mainContainerHome"
@@ -34,23 +36,42 @@ const Home = () => {
           <div className="containerTitle">
             <div className="firstChildText text">EXPERIÊNCIA EM FRONT-END</div>
             <div className="secondChildText text">
-              E UI <div className="text-[#38075E]">DESIGN PARA EMPRESAS</div>
+              E UI <div className="animated">DESIGN PARA EMPRESAS</div>
             </div>
             <div className="secondChildText text">IMPULSIONANDO O SUCESSO.</div>
           </div>
-          <div style={{ fontWeight: "500" }} className="lastChildText text">
-            SEMPRE COM FOCO NO DESENVOLVIMENTO ÁGIL COM BOAS PRÁTICAS EM BUSCA
-            DE UMA BOA EXPERIÊNCIA PARA O USUÁRIO.
+          <div className="lastChildText text">
+            <Typewriter
+              words={['SEMPRE COM FOCO NO DESENVOLVIMENTO ÁGIL COM BOAS PRÁTICAS EM BUSCA DE UMA BOA EXPERIÊNCIA PARA O USUÁRIO.']}
+              loop={1}
+              cursorStyle='_'
+              typeSpeed={40}
+              deleteSpeed={50}
+              delaySpeed={1000}
+            />
+            
           </div>
-          <a
-            href="https://api.whatsapp.com/send?phone=5527997964980&text=Meu%20Whatsapp"
-            target="_blank"
-            rel="noreferrer"
-            style={{ fontWeight: "600" }}
-            className="cursor-pointer text-[#fff] mt-3 text-[1.2rem] gap-2 w-[140px] p-4 flex justify-center bg-[#38075E] rounded-lg"
-          >
-            Contato
-          </a>
+          <div className="container-links">
+            <a
+              href="https://api.whatsapp.com/send?phone=5527997964980&text=Meu%20Whatsapp"
+              target="_blank"
+              rel="noreferrer"
+              style={{ fontWeight: "600" }}
+              className="cursor-pointer text-[#fff] mt-3 text-[1.2rem] gap-2 w-[140px] p-3 flex justify-center bg-[#38075E] rounded-lg"
+            >
+              Contato
+            </a>
+            <a
+              href={Curriculo}
+              target="_self"
+              rel="noreferrer"
+              download
+              style={{ fontWeight: "600" }}
+              className="cursor-pointer text-[#fff] mt-3 text-[1.2rem] gap-2 w-[140px] p-3 flex justify-center bg-[#38075E] rounded-lg"
+            >
+              Meu CV
+            </a>
+          </div>
         </div>
         <div className="containerImg">
           <img src={Mobile} className="imageMobile" />

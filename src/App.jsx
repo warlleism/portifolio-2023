@@ -1,10 +1,10 @@
-import { useEffect } from "react";
 import "./App.css";
 import About from "./views/about";
 import Footer from "./views/footer";
 import Home from "./views/home";
 import Projects from "./views/projetcs";
 import Skills from "./views/skills";
+import Contacts from "./views/contact";
 
 function App() {
 
@@ -14,6 +14,7 @@ function App() {
       <About />
       <Skills />
       <Projects />
+      <Contacts />
       <Footer />
     </div>
   );
