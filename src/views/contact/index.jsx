@@ -4,16 +4,42 @@ import { z } from 'zod';
 import './style.scss';
 import imgContact from '../../assets/contact.png'
 import { Typewriter } from 'react-simple-typewriter'
+import axios from 'axios';
+import Spinner from './component/spinner';
+import { useState } from 'react';
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
+
 
 const schema = z.object({
-    name: z.string().min(1, { message: 'Nome é obrigatório' }).max(255, { message: 'Nome deve ter no máximo 255 caracteres' }),
-    email: z.string().email({ message: 'E-mail inválido' }),
-    description: z.string().max(500, { message: 'Descrição deve ter no máximo 500 caracteres' }).optional(),
+    assunto: z.string().min(1, { message: 'Assunto é obrigatório' }).max(255, { message: 'Nome deve ter no máximo 255 caracteres' }),
+    remetente: z.string().email({ message: 'E-mail inválido' }),
+    descricao: z.string().max(500, { message: 'Descrição deve ter no máximo 500 caracteres' }).optional(),
 });
 
 
 const Contacts = () => {
-    const onSubmit = (data) => console.log(data);
+    const [loading, setLoading] = useState(false)
+
+    const onSubmit = async (data) => {
+        setLoading(true)
+        const dados = {
+            remetente: data.remetente,
+            assunto: data.assunto,
+            descricao: data.descricao
+        };
+
+        try {
+            const response = await axios.post('https://send-email-python.vercel.app/enviar-email', dados);
+            console.log('Resposta:', response.data);
+            toast("Mensagem enviada com sucesso!")
+            setLoading(false)
+        } catch (error) {
+            console.error('Erro ao enviar a requisição:', error);
+            toast("Ops! algo deu errado.")
+            setLoading(false)
+        }
+    };
 
     const {
         register,
@@ -30,25 +56,30 @@ const Contacts = () => {
                 <form onSubmit={handleSubmit(onSubmit)} >
 
                     <div className='container-input'>
-                        <div className='text-container'>Título:</div>
-                        <input type='text' {...register('name')} />
-                        {errors.name && <span style={{ color: '#0000006d', fontSize: '1rem' }}>{errors.name.message}</span>}
+                        <div className='text-container'>Assunto:</div>
+                        <input type='text' {...register('assunto')} />
+                        {errors.assunto && <span style={{ color: '#0000006d', fontSize: '1rem' }}>{errors.assunto.message}</span>}
                     </div>
 
                     <div className='container-input' >
                         <div className='text-container'>Email:</div>
-                        <input type='text' {...register('email')} />
-                        {errors.email && <span style={{ color: '#0000006d', fontSize: '1rem' }}>{errors.email.message}</span>}
+                        <input type='text' {...register('remetente')} />
+                        {errors.remetente && <span style={{ color: '#0000006d', fontSize: '1rem' }}>{errors.remetente.message}</span>}
                     </div>
 
                     <div className='container-textarea'>
                         <div className='text-container'>Descrição:</div>
-                        <textarea rows={10} {...register('description')} />
-                        {errors.description && <span style={{ color: '#0000006d', fontSize: '1rem' }}>{errors.description.message}</span>}
+                        <textarea rows={10} {...register('descricao')} />
+                        {errors.descricao && <span style={{ color: '#0000006d', fontSize: '1rem' }}>{errors.descricao.message}</span>}
                     </div>
 
-                    <button type='submit'>
-                        Enviar
+                    <button type='submit'
+                        className='flex flex-row justify-center items-center'>
+                        <Spinner value={loading} />
+                        {
+                            !loading ? 'Enviar' : null
+                        }
+
                     </button>
                 </form>
                 <div className='container-img-content'>
@@ -70,6 +101,7 @@ const Contacts = () => {
                 </div>
 
             </div>
+            <ToastContainer />
         </div >
     );
 };
