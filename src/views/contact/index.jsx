@@ -57,7 +57,7 @@ const Contacts = () => {
                     >
                         <div className='text-[#fff] w-[60%] W-[100%] flex justify-center font-extrabold 2xl:text-[4rem] xl:text-[3rem] '>
                             <Typewriter
-                                words={['ALIVE', 'VIVER', 'CODE', 'CÓDIGO', 'PROGRAM', 'PROGRAMAR', 'LOVE', 'AMOR']}
+                                words={["TECNOLOGIA", "CÓDIGO", "PROGRAMAR", "ALGORITMO", "DESENVOLVER", "DEPURAR", "COMPILAR", "INTERFACE", "ESTRUTURA", "BIBLIOTECA", "DEPENDÊNCIA", "ITERAR", "DEPLOY"]}
                                 loop={100}
                                 cursor
                                 cursorStyle='_'
