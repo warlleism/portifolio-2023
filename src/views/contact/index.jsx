@@ -3,8 +3,7 @@ import { useForm } from 'react-hook-form';
 import { z } from 'zod';
 import './style.scss';
 import imgContact from '../../assets/contact.png'
-import imgContact2 from '../../assets/contact2.png'
-import { useState } from 'react';
+import { Typewriter } from 'react-simple-typewriter'
 
 const schema = z.object({
     name: z.string().min(1, { message: 'Nome é obrigatório' }).max(255, { message: 'Nome deve ter no máximo 255 caracteres' }),
@@ -15,7 +14,6 @@ const schema = z.object({
 
 const Contacts = () => {
     const onSubmit = (data) => console.log(data);
-    const [img, setImg] = useState(0)
 
     const {
         register,
@@ -24,10 +22,6 @@ const Contacts = () => {
     } = useForm({
         resolver: zodResolver(schema),
     });
-
-    setInterval(() => {
-        setImg(prevImg => (prevImg === 0 ? 1 : 0));
-    }, 3000);
 
     return (
         <div id="contacts">
@@ -59,9 +53,19 @@ const Contacts = () => {
                 </form>
                 <div className='container-img-content'>
                     <div className='container-img'
-                        style={{ backgroundImage: `url(${img === 1 ? imgContact : imgContact2})` }}
+                        style={{ backgroundImage: `url(${imgContact})` }}
                     >
-
+                        <div className='text-[#fff] w-[60%] W-[100%] flex justify-center font-extrabold 2xl:text-[4rem] xl:text-[3rem] '>
+                            <Typewriter
+                                words={['ALIVE', 'VIVER', 'CODE', 'CÓDIGO', 'PROGRAM', 'PROGRAMAR', 'LOVE', 'AMOR']}
+                                loop={100}
+                                cursor
+                                cursorStyle='_'
+                                typeSpeed={100}
+                                deleteSpeed={100}
+                                delaySpeed={2000}
+                            />
+                        </div>
                     </div>
                 </div>
 

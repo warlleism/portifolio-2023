@@ -49,7 +49,6 @@ const Home = () => {
               deleteSpeed={50}
               delaySpeed={1000}
             />
-            
           </div>
           <div className="container-links">
             <a
