@@ -19,6 +19,16 @@ const schema = z.object({
 
 
 const Contacts = () => {
+
+    const {
+        reset,
+        register,
+        handleSubmit,
+        formState: { errors },
+    } = useForm({
+        resolver: zodResolver(schema),
+    });
+
     const [loading, setLoading] = useState(false)
 
     const onSubmit = async (data) => {
@@ -33,6 +43,7 @@ const Contacts = () => {
             const response = await axios.post('https://send-email-python.vercel.app/enviar-email', dados);
             console.log('Resposta:', response.data);
             toast("Mensagem enviada com sucesso!")
+            reset();
             setLoading(false)
         } catch (error) {
             console.error('Erro ao enviar a requisição:', error);
@@ -41,13 +52,7 @@ const Contacts = () => {
         }
     };
 
-    const {
-        register,
-        handleSubmit,
-        formState: { errors },
-    } = useForm({
-        resolver: zodResolver(schema),
-    });
+
 
     return (
         <div id="contacts">
