@@ -4,6 +4,20 @@
   box-sizing: border-box;
   padding-top: 10px;
   padding-bottom: 0;
+  background-image: linear-gradient(315deg,
+      hsl(274deg 86% 20%) 19%,
+      hsl(273deg 78% 18%) 31%,
+      hsl(272deg 71% 15%) 34%,
+      hsl(272deg 64% 13%) 37%,
+      hsl(276deg 63% 10%) 42%,
+      hsl(282deg 72% 6%) 47%,
+      hsl(277deg 100% 3%) 53%,
+      hsl(276deg 100% 2%) 60%,
+      hsl(275deg 100% 2%) 67%,
+      hsl(274deg 100% 2%) 74%,
+      hsl(273deg 100% 2%) 83%,
+      hsl(272deg 100% 2%) 91%,
+      hsl(0deg 0% 0%) 100%);
 
   @media (max-width: 800px) {
     width: 100vw;
@@ -22,6 +36,10 @@
     .container-links {
       display: flex;
       gap: 10px;
+
+      a {
+        background-color: #660cac;
+      }
     }
 
     @media (max-width: 1374px) {
@@ -158,7 +176,7 @@
         @media (max-width: 800px) {
           width: 100vw;
         }
-        
+
 
         .animated {
           animation: colorText 3s ease-in-out infinite;
@@ -204,7 +222,7 @@
         }
       }
 
-    
+
     }
 
     .lastChildText {
@@ -215,7 +233,7 @@
       height: 60px;
       letter-spacing: 2px;
       width: 700px;
-      
+
 
       @media (max-width: 880px) {
         text-align: center;

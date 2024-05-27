@@ -53,6 +53,10 @@
         border: solid 2px rgba(204, 0, 255, 0.329);
         border-top-left-radius: 5px;
         border-bottom-left-radius: 5px;
+        background-repeat: no-repeat;
+        background-position: center center;
+        background-size: 100% 160%;
+        background-image: url('../../assets/img/background.png');
         animation: containerBorder 3s infinite ease-in-out;
 
         @media (max-width: 918px) {
@@ -62,6 +66,7 @@
 
         .container-textarea {
             width: 90%;
+            font-weight: 600;
             margin-bottom: 10px;
 
             .text-container {
@@ -76,7 +81,7 @@
                 width: 100%;
                 border: solid 2px #9000ff;
                 outline: none;
-                background-color: rgba(0, 0, 0, 0.247);
+                background-color: rgba(10, 10, 10, 0.685);
                 color: #ffffffaf;
                 animation: containerBorder 3s infinite ease-in-out;
             }
@@ -94,6 +99,8 @@
             .text-container {
                 margin-bottom: 10px;
                 color: #ffffffaf;
+                font-weight: 600;
+
             }
 
             input {
@@ -102,7 +109,7 @@
                 width: 100%;
                 border: solid 2px #9000ff;
                 outline: none;
-                background-color: rgba(0, 0, 0, 0.247);
+                background-color: rgba(10, 10, 10, 0.685);
                 color: #ffffffaf;
                 animation: containerBorder 3s infinite ease-in-out;
             }

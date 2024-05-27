@@ -9,27 +9,7 @@ import { Typewriter } from 'react-simple-typewriter'
 const Home = () => {
 
   return (
-    <div
-      className="mainContainerHome"
-      style={{
-        backgroundImage: `url(${Background}) ,linear-gradient(
-            315deg,
-            hsl(274deg 86% 20%) 19%,
-            hsl(273deg 78% 18%) 31%,
-            hsl(272deg 71% 15%) 34%,
-            hsl(272deg 64% 13%) 37%,
-            hsl(276deg 63% 10%) 42%,
-            hsl(282deg 72% 6%) 47%,
-            hsl(277deg 100% 3%) 53%,
-            hsl(276deg 100% 2%) 60%,
-            hsl(275deg 100% 2%) 67%,
-            hsl(274deg 100% 2%) 74%,
-            hsl(273deg 100% 2%) 83%,
-            hsl(272deg 100% 2%) 91%,
-            hsl(0deg 0% 0%) 100%
-        )`,
-      }}
-    >
+    <div className="mainContainerHome">
       <Header />
       <div id="home" className="continerInfo">
         <div className="containerHomeContent">
@@ -56,7 +36,8 @@ const Home = () => {
               target="_blank"
               rel="noreferrer"
               style={{ fontWeight: "600" }}
-              className="cursor-pointer text-[#fff] mt-3 text-[1.2rem] gap-2 w-[140px] p-3 flex justify-center bg-[#38075E] rounded-lg"
+              className="
+              cursor-pointer text-[#fff] mt-3 text-[1.2rem] gap-2 w-[140px] p-3 flex justify-center bg-[#38075E] rounded-lg"
             >
               Contato
             </a>
