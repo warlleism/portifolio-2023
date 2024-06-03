@@ -8,8 +8,6 @@ const Skills = () => {
 
    const isIOS = /iPad|iPhone|iPod/.test(navigator.userAgent) && !window.MSStream;
 
-console.log(isIOS)
-
   const handleMouseEnter = (index) => {
     setHoveredContainerIndex(index);
   };

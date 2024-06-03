@@ -41,7 +41,6 @@ const Contacts = () => {
 
         try {
             const response = await axios.post('https://send-email-python.vercel.app/enviar-email', dados);
-            console.log('Resposta:', response.data);
             toast("Mensagem enviada com sucesso!")
             reset();
             setLoading(false)

@@ -7,6 +7,7 @@ const Header = () => {
   const [scrollParaBaixo, setScrollParaBaixo] = useState(false);
 
   useEffect(() => {
+    
     function handleScroll() {
       const scrollAtual = window.pageYOffset;
       const scrollAnterior = scrollRef.current || 0;
