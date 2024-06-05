@@ -7,6 +7,8 @@ import Skills from "./views/skills";
 import Contacts from "./views/contact";
 import { useEffect } from "react";
 import axios from "axios";
+import ArrowUp from "./component/arrowUp";
+import ArrowDown from "./component/arrowDown";
 
 function App() {
 
@@ -40,6 +42,7 @@ function App() {
       <Projects />
       <Contacts />
       <Footer />
+      <ArrowUp />
     </div>
   );
 }

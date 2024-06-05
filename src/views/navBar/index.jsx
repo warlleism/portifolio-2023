@@ -7,7 +7,7 @@ const Header = () => {
   const [scrollParaBaixo, setScrollParaBaixo] = useState(false);
 
   useEffect(() => {
-    
+
     function handleScroll() {
       const scrollAtual = window.pageYOffset;
       const scrollAnterior = scrollRef.current || 0;
@@ -56,7 +56,7 @@ const Header = () => {
           </a>
         </li>
         <li>
-          <a href="#about" className="text">
+          <a href="#about" id="aboutLink" className="text">
             Sobre
           </a>
         </li>

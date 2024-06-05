@@ -1,16 +1,17 @@
 import Header from "../navBar";
-import Background from "../../assets/img/background.png";
 import Mobile from "../../assets/img/mobile-content.png";
 import "../../styles/textStyle.css";
 import "./style.scss";
 import Curriculo from '../../assets/Currículo.pdf'
 import { Typewriter } from 'react-simple-typewriter'
+import ArrowDown from "../../component/arrowDown";
 
 const Home = () => {
 
   return (
     <div className="mainContainerHome">
       <Header />
+      <ArrowDown />
       <div id="home" className="continerInfo">
         <div className="containerHomeContent">
           <div className="containerTitle">
