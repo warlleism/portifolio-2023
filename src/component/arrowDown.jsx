@@ -4,13 +4,23 @@ import './style.scss'
 const ArrowDown = () => {
 
     return (
-        <a
+        <div
             href="#about"
-            className="absolute bottom-7 left-1/2 transform -translate-x-1/2 cursor-pointer animation">
-            <div>
+            className="
+            w-[100%]
+            absolute 
+            left-0
+            bottom-7 
+            flex
+            justify-center
+            items-center
+            cursor-pointer 
+            animation"
+        >
+            <a href="#about">
                 <SlMouse size={40} color="#fff" className="pointer-events-none" />
-            </div>
-        </a>
+            </a>
+        </div>
     )
 }
 
