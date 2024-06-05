@@ -12,10 +12,10 @@ const About = () => {
             <div className="text-name text">WARLLEI</div>
             <div className="text-lastname text colorAnimation">MARTINS</div>
             <div className="text-job antonia text" style={{ fontWeight: 300 }}>
-              DESENVOLVEDOR FRONT-END
+              DESENVOLVEDOR FULL-STACK
             </div>
             <div className="text-description antonia" style={{ fontWeight: 200 }}>
-              Desenvolvedor front-end júnior com 3 anos de experiência.
+              Desenvolvedor full-stack com 3 anos de experiência.
               Apaixonado por criar interfaces atraentes e funcionais. Sempre
               aprendendo e acompanhando tendências. Pronto para contribuir em
               projetos inovadores

@@ -14,9 +14,9 @@ const Home = () => {
       <div id="home" className="continerInfo">
         <div className="containerHomeContent">
           <div className="containerTitle">
-            <div className="firstChildText text">EXPERIÊNCIA EM FRONT-END</div>
+            <div className="firstChildText text">DESENVOLVEDOR FULL-STACK</div>
             <div className="secondChildText text">
-              E UI <div className="animated">DESIGN PARA EMPRESAS</div>
+              UI <div className="animated">DESIGN & RESPONSIVIDADE</div>
             </div>
             <div className="secondChildText text">IMPULSIONANDO O SUCESSO.</div>
           </div>
