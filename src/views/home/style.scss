@@ -27,12 +27,12 @@
 
   .containerHomeContent {
     width: 50%;
-    justify-content: center;
     display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    box-sizing: border-box;
     padding-left: 120px;
+    flex-direction: column;
+    box-sizing: border-box;
+    justify-content: center;
+    align-items: flex-start;
 
     .container-links {
       display: flex;
@@ -48,22 +48,18 @@
     }
 
     @media (max-width: 1140px) {
-      padding-left: 10px;
+      padding-left: 0;
       max-width: 1140px;
+      padding-left: 30px;
+
     }
 
     @media (max-width: 940px) {
-      max-width: 880px;
-      padding-left: 0;
-      width: 100vw;
+      width: 100%;
       justify-content: center;
       align-items: center;
     }
 
-    @media (max-width: 800px) {
-      max-width: 880px;
-      width: 100vw;
-    }
   }
 
   .continerInfo {

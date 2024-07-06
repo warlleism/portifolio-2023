@@ -39,43 +39,45 @@ const Header = () => {
   }, []);
 
   return (
-    <div
-      id="header"
-      className="mainContainerHeader"
-      style={{
-        transform: scrollParaBaixo ? "translateY(-400%)" : "translateY(0%)",
-      }}
-    >
-      <div className="containerName text">
-        Warllei Martins
+    <div style={{ margin: '0 auto', display: "flex", justifyContent: "center" }}>
+      <div
+        id="header"
+        className="mainContainerHeader"
+        style={{
+          transform: scrollParaBaixo ? "translateY(-400%)" : "translateY(0%)",
+        }}
+      >
+        <div className="containerName text">
+          Warllei Martins
+        </div>
+        <ul>
+          <li >
+            <a href="#home" className="text">
+              Início
+            </a>
+          </li>
+          <li>
+            <a href="#about" id="aboutLink" className="text">
+              Sobre
+            </a>
+          </li>
+          <li>
+            <a href="#skills" className="text">
+              Skills
+            </a>
+          </li>
+          <li>
+            <a href="#projects" className="text">
+              Projetos
+            </a>
+          </li>
+          <li>
+            <a href="#contacts" className="text">
+              Contato
+            </a>
+          </li>
+        </ul>
       </div>
-      <ul>
-        <li >
-          <a href="#home" className="text">
-            Início
-          </a>
-        </li>
-        <li>
-          <a href="#about" id="aboutLink" className="text">
-            Sobre
-          </a>
-        </li>
-        <li>
-          <a href="#skills" className="text">
-            Skills
-          </a>
-        </li>
-        <li>
-          <a href="#projects" className="text">
-            Projetos
-          </a>
-        </li>
-        <li>
-          <a href="#contacts" className="text">
-            Contato
-          </a>
-        </li>
-      </ul>
     </div>
   );
 };

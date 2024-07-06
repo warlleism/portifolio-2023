@@ -1,89 +1,83 @@
-#header {
+.mainContainerHeader {
+  top: 0;
+  width: 87%;
+  z-index: 10;
+  display: flex;
+  height: 100px;
+  margin: 0 auto;
+  transition: all;
+  position: fixed;
+  align-items: center;
+  box-sizing: border-box;
+  transition: ease-in .5s;
+  transform: translateY(-400%);
+  justify-content: space-between;
 
-  &.mainContainerHeader {
+  @media (max-width: 940px) {
+    justify-content: center;
+  }
+
+  @media (max-width: 1140px) {
+    width: 100%;
+  }
+
+  .containerName {
+    color: #fff;
+    font-size: 2rem;
+    font-weight: 600;
+    letter-spacing: 3px;
+    box-sizing: border-box;
+
+    @media (max-width: 1140px) {
+      padding: 0 30px;
+    }
+
+
+    @media (max-width: 880px) {
+      text-align: center;
+      padding: 0;
+    }
+
+  }
+
+  .text-3xl {
+    font-size: 2rem;
+    font-weight: 600;
+    width: 63%;
+    color: #fff;
+    letter-spacing: 3px;
+    text-align: left;
+
+    @media (max-width: 880px) {
+      width: 100%;
+      text-align: center;
+    }
+  }
+
+  ul {
+    gap: 30px;
     display: flex;
     align-items: center;
-    z-index: 10;
     justify-content: center;
-    height: 100px;
-    width: 100%;
-    position: fixed;
-    top: 0;
-    transition: all;
-    transform: translateY(-400%);
-    transition: ease-in .5s;
 
     @media (max-width: 1262px) {
-      width: 100%;
-      align-self: center;
-      margin: 0 auto;
+      width: 50%;
     }
 
-    .containerName {
-      font-size: 2rem;
-      font-weight: 600;
-      width: 67%;
+    @media (max-width: 940px) {
+      display: none;
+    }
+
+    li {
       color: #fff;
-      letter-spacing: 3px;
-      box-sizing: border-box;
-      padding: 0 0 0 125px;
+      font-size: 1.3rem;
 
-      @media (max-width: 1140px) {
-        width: 100%;
-        padding: 0 0 0 12px;
+      a {
+        text-decoration: none;
+        color: inherit;
 
-      }
-
-
-      @media (max-width: 880px) {
-        text-align: center;
-        padding: 0;
-      }
-
-     
-
-    }
-
-    .text-3xl {
-      font-size: 2rem;
-      font-weight: 600;
-      width: 63%;
-      color: #fff;
-      letter-spacing: 3px;
-      text-align: left;
-
-      @media (max-width: 880px) {
-        width: 100%;
-        text-align: center;
-      }
-    }
-
-    ul {
-      display: flex;
-      align-items: center;
-      width: 37%;
-      gap: 30px;
-      justify-content: center;
-
-      @media (max-width: 1262px) {
-        width: 50%;
-      }
-
-      @media (max-width: 880px) {
-        display: none;
-      }
-
-      li {
-        color: #fff;
-        font-size: 1.3rem;
-
-        a {
-          text-decoration: none;
-          color: inherit;
-
-          &:hover {
-            text-decoration: underline;
-          }
+        &:hover {
+          text-decoration: underline;
         }
       }
     }
