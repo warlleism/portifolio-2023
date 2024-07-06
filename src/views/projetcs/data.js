@@ -14,8 +14,27 @@ import pj13 from "../../assets/img/projects/pj13.jpg";
 import pj14 from "../../assets/img/projects/pj14.png";
 import pj15 from "../../assets/img/projects/pj15.png";
 import pj16 from "../../assets/img/projects/pj16.png";
+import pj17 from "../../assets/img/projects/pj17.png";
 
 export const Data = [
+  {
+    id: 1,
+    name: "Web App",
+    side: "Full-stack",
+    git: "https://github.com/warlleism/node-next-full-stack-ecommerce",
+    skills: [
+      { skill: "Next.JS 14" },
+      { skill: "React.Js" },
+      { skill: "Node.Js" },
+      { skill: "TypeOrm" },
+      { skill: "Express" },
+      { skill: "PostgreSql" },
+      { skill: "TypeScript" },
+      { skill: "SSR & SSG" },
+      { skill: "HTML/CSS/sass" },
+    ],
+    img: pj17,
+  },
   {
     id: 12,
     name: "Web App",
@@ -83,7 +102,7 @@ export const Data = [
     img: pj1,
   },
   {
-    id: 1,
+    id: 16,
     name: "Mobile App",
     link: "https://www.behance.net/gallery/174203861/Mobile-Design",
     git: "https://github.com/warlleism/restaurant-reservation-registration-mobile-app",
