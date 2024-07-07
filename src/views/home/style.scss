@@ -44,10 +44,6 @@
       }
     }
 
-    @media (max-width: 1374px) {
-      margin-bottom: 80px;
-    }
-
     @media (max-width: 1140px) {
       max-width: 1140px;
       padding-left: 30px;
@@ -104,6 +100,9 @@
       align-items: center;
       justify-content: center;
 
+      @media (max-width: 1374px) {
+        height: 195px;
+      }
       @media (max-width: 414px) {
         height: 190px;
       }
@@ -152,6 +151,7 @@
 
         @media (max-width: 1374px) {
           font-size: 3.6rem;
+
         }
 
         @media (max-width: 1016px) {
@@ -195,6 +195,7 @@
 
         @media (max-width: 1374px) {
           font-size: 3.6rem;
+
         }
 
         @media (max-width: 1016px) {

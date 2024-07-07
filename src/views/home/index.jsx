@@ -17,19 +17,21 @@ const Home = () => {
           <div className="containerTitle">
             <div className="firstChildText text">DESENVOLVEDOR FULL-STACK</div>
             <div className="secondChildText text">
-              UI <div className="animated">DESIGN & RESPONSIVIDADE</div>
+              UI <div className="animated">
+                <Typewriter
+                  words={['DESIGN & RESPONSIVIDADE']}
+                  loop={1}
+                  cursorStyle='_'
+                  typeSpeed={80}
+                  deleteSpeed={50}
+                  delaySpeed={1000}
+                />
+              </div>
             </div>
             <div className="secondChildText text">IMPULSIONANDO O SUCESSO.</div>
           </div>
           <div className="lastChildText text">
-            <Typewriter
-              words={['SEMPRE COM FOCO NO DESENVOLVIMENTO ÁGIL COM BOAS PRÁTICAS EM BUSCA DE UMA BOA EXPERIÊNCIA PARA O USUÁRIO.']}
-              loop={1}
-              cursorStyle='_'
-              typeSpeed={40}
-              deleteSpeed={50}
-              delaySpeed={1000}
-            />
+            SEMPRE COM FOCO NO DESENVOLVIMENTO ÁGIL COM BOAS PRÁTICAS EM BUSCA DE UMA BOA EXPERIÊNCIA PARA O USUÁRIO.
           </div>
           <div className="container-links">
             <a
