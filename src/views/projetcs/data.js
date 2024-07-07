@@ -57,7 +57,7 @@ export const Data = [
     id: 2,
     name: "Landing Page spotify",
     side: "Web Design",
-    git: "https://www.behance.net/gallery/170008613/Web-Design",
+    link: "https://www.behance.net/gallery/170008613/Web-Design",
     side: "Web Design",
     skills: [{ skill: "Figma" }, { skill: "Web Design" }],
     img: pj19,
