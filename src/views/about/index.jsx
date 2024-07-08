@@ -18,7 +18,7 @@ const About = () => {
               Desenvolvedor full-stack com 3 anos de experiência.
               Apaixonado por criar interfaces atraentes e funcionais. Sempre
               aprendendo e acompanhando tendências. Pronto para contribuir em
-              projetos inovadores
+              projetos inovadores.
             </div>
             <img src={ItsImg} alt="" className="imageAnimation" />
           </div>

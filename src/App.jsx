@@ -8,7 +8,20 @@ import Contacts from "./views/contact";
 import { useEffect } from "react";
 import axios from "axios";
 import ArrowUp from "./component/arrowUp";
-import ArrowDown from "./component/arrowDown";
+import { useInView } from 'react-intersection-observer';
+
+function SectionWrapper({ children }) {
+  const { ref, inView } = useInView({
+    triggerOnce: true, 
+    threshold: 0.1,   
+  });
+
+  return (
+    <div ref={ref} className={`fade-in ${inView ? 'visible' : ''}`}>
+      {children}
+    </div>
+  );
+}
 
 function App() {
 
@@ -32,15 +45,15 @@ function App() {
     if (!emailEnviado) {
       enviarEmail();
     }
-  }, []); 
+  }, []);
 
   return (
     <div style={{ background: "#040405" }}>
       <Home />
-      <About />
-      <Skills />
-      <Projects />
-      <Contacts />
+      <SectionWrapper><About /></SectionWrapper>
+      <SectionWrapper><Skills /></SectionWrapper>
+      <SectionWrapper><Projects /></SectionWrapper>
+      <SectionWrapper><Contacts /></SectionWrapper>
       <Footer />
       <ArrowUp />
     </div>
