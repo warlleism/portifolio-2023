@@ -19,8 +19,26 @@ import pj18 from "../../assets/img/projects/pj18.png";
 import pj19 from "../../assets/img/projects/pj19.png";
 import pj20 from "../../assets/img/projects/pj20.png";
 import pj21 from "../../assets/img/projects/pj21.png";
+import pj22 from "../../assets/img/projects/pj22.png";
 
 export const Data = [
+  {
+    id: 21,
+    name: "Gerênciamanto médico Web App",
+    side: "Full-stack",
+    git: "https://github.com/warlleism/fullstack-system-of-medical-consultations-in-angular-nest-prisma-postgresql",
+    skills: [
+      { skill: "Angular 18" },
+      { skill: "SSR & SSG" },
+      { skill: "Node.js" },
+      { skill: "TypeScript" },
+      { skill: "Nest" },
+      { skill: "Prisma" },
+      { skill: "Express" },
+      { skill: "PostgreSql" },
+    ],
+    img: pj22,
+  },
   {
     id: 0,
     name: "E-Commerce Web App",
@@ -54,15 +72,6 @@ export const Data = [
     img: pj18,
   },
   {
-    id: 2,
-    name: "Landing Page spotify",
-    side: "Web Design",
-    link: "https://www.behance.net/gallery/170008613/Web-Design",
-    side: "Web Design",
-    skills: [{ skill: "Figma" }, { skill: "Web Design" }],
-    img: pj19,
-  },
-  {
     id: 3,
     name: "Next Auth Web App",
     side: "Front-end",
@@ -78,24 +87,7 @@ export const Data = [
     ],
     img: pj13,
   },
-  {
-    id: 16,
-    name: "Website sobre a natureza",
-    side: "Full-stack",
-    link: "https://www.behance.net/gallery/170124931/Web-Design",
-    git: "https://github.com/warlleism/blog-fullstack-nextjs-13-nodejs",
-    skills: [
-      { skill: "Node.js" },
-      { skill: "express" },
-      { skill: "sequelize" },
-      { skill: "NextJs" },
-      { skill: "ReactJs" },
-      { skill: "Fetch" },
-      { skill: "JavaScript" },
-      { skill: "Figma" },
-    ],
-    img: pj10,
-  },
+
   {
     id: 19,
     name: "News Website",
@@ -136,6 +128,24 @@ export const Data = [
       { skill: "HTML/CSS" },
     ],
     img: pj14,
+  },
+  {
+    id: 16,
+    name: "Website sobre a natureza",
+    side: "Full-stack",
+    link: "https://www.behance.net/gallery/170124931/Web-Design",
+    git: "https://github.com/warlleism/blog-fullstack-nextjs-13-nodejs",
+    skills: [
+      { skill: "Node.js" },
+      { skill: "express" },
+      { skill: "sequelize" },
+      { skill: "NextJs" },
+      { skill: "ReactJs" },
+      { skill: "Fetch" },
+      { skill: "JavaScript" },
+      { skill: "Figma" },
+    ],
+    img: pj10,
   },
   {
     id: 12,
@@ -205,6 +215,15 @@ export const Data = [
       { skill: "Figma" },
       { skill: "Web Design" }],
     img: pj1,
+  },
+  {
+    id: 2,
+    name: "Landing Page spotify",
+    side: "Web Design",
+    link: "https://www.behance.net/gallery/170008613/Web-Design",
+    side: "Web Design",
+    skills: [{ skill: "Figma" }, { skill: "Web Design" }],
+    img: pj19,
   },
   {
     id: 8,
