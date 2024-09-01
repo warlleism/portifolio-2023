@@ -51,6 +51,10 @@ function App() {
     const background = document.getElementsByClassName('background-fade')[0];
     setTimeout(() => {
       background.classList.add('remove-background-fade');
+
+      setTimeout(() => {
+        background.style.display = 'none'
+      }, 100)
     }, 2000);
 
   }, []);
