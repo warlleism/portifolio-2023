@@ -121,8 +121,8 @@ const Projects = () => {
                     </div>
 
                     <div className="my-custom-skills">
-                      {e.skills.map((skill) => (
-                        <div key={skill.id} className="my-custom-skill antonia borderAnimation">
+                      {e.skills.map((skill, index) => (
+                        <div key={index} className="my-custom-skill antonia borderAnimation">
                           {skill.skill}
                         </div>
                       ))}

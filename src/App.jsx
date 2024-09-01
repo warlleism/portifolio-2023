@@ -9,11 +9,13 @@ import { useEffect } from "react";
 import axios from "axios";
 import ArrowUp from "./component/arrowUp";
 import { useInView } from 'react-intersection-observer';
+import Spinner from "./views/contact/component/spinner";
+import { BarLoader } from "react-spinners";
 
 function SectionWrapper({ children }) {
   const { ref, inView } = useInView({
-    triggerOnce: true, 
-    threshold: 0.1,   
+    triggerOnce: true,
+    threshold: 0.1,
   });
 
   return (
@@ -45,10 +47,25 @@ function App() {
     if (!emailEnviado) {
       enviarEmail();
     }
+
+    const background = document.getElementsByClassName('background-fade')[0];
+    setTimeout(() => {
+      background.classList.add('remove-background-fade');
+    }, 2000);
+
   }, []);
 
   return (
-    <div style={{ background: "#040405" }}>
+    <div style={{ background: "#040405", position: 'relative' }}>
+      <div className="background-fade">
+        <BarLoader
+          color={'#4D0188'}
+          loading={true}
+          size={230}
+          aria-label="Loading Spinner"
+          data-testid="loader"
+        />
+      </div>
       <Home />
       <SectionWrapper><About /></SectionWrapper>
       <SectionWrapper><Skills /></SectionWrapper>
