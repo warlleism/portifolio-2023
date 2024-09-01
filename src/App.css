@@ -30,4 +30,5 @@
 
 .remove-background-fade{
   opacity: 0;
+  pointer-events: none;
 }
