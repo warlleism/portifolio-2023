@@ -209,6 +209,9 @@ export const Data = [
     side: "Web Design",
     skills: [
       { skill: "React.Js" },
+      { skill: "Zod" },
+      { skill: "React Hook Form" },
+      { skill: "Axios" },
       { skill: "TypeScript" },
       { skill: "HTML/CSS" },
       { skill: "Tailwindcss" },

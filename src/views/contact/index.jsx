@@ -1,14 +1,14 @@
+import { ToastContainer, toast } from 'react-toastify';
 import { zodResolver } from '@hookform/resolvers/zod';
+import { Typewriter } from 'react-simple-typewriter'
+import imgContact from '../../assets/contact.png'
+import 'react-toastify/dist/ReactToastify.css';
+import Spinner from './component/spinner';
 import { useForm } from 'react-hook-form';
+import { useState } from 'react';
+import axios from 'axios';
 import { z } from 'zod';
 import './style.scss';
-import imgContact from '../../assets/contact.png'
-import { Typewriter } from 'react-simple-typewriter'
-import axios from 'axios';
-import Spinner from './component/spinner';
-import { useState } from 'react';
-import { ToastContainer, toast } from 'react-toastify';
-import 'react-toastify/dist/ReactToastify.css';
 
 
 const schema = z.object({

@@ -1,10 +1,9 @@
-import Header from "../navBar";
 import Mobile from "../../assets/img/mobile-content.png";
-import "../../styles/textStyle.css";
-import "./style.scss";
 import Curriculo from '../../assets/Currículo.pdf'
-import { Typewriter } from 'react-simple-typewriter'
 import ArrowDown from "../../component/arrowDown";
+import "../../styles/textStyle.css";
+import Header from "../navBar";
+import "./style.scss";
 
 const Home = () => {
 
@@ -18,14 +17,7 @@ const Home = () => {
             <div className="firstChildText text">DESENVOLVEDOR FULL-STACK</div>
             <div className="secondChildText text">
               UI <div className="animated">
-                <Typewriter
-                  words={['DESIGN & RESPONSIVIDADE']}
-                  loop={1}
-                  cursorStyle='_'
-                  typeSpeed={80}
-                  deleteSpeed={50}
-                  delaySpeed={1000}
-                />
+                DESIGN & RESPONSIVIDADE
               </div>
             </div>
             <div className="secondChildText text">IMPULSIONANDO O SUCESSO.</div>
