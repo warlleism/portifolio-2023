@@ -24,22 +24,6 @@ import pj23 from "../../assets/img/projects/pj23.png";
 
 export const Data = [
   {
-    id: 23,
-    name: "Chat Online Web App",
-    side: "Full-stack",
-    git: "https://github.com/warlleism/chat-socket-io-node-typescript",
-    skills: [
-      { skill: "HTML" },
-      { skill: "CSS" },
-      { skill: "TypeScript" },
-      { skill: "Socket.io" },
-      { skill: "Node.js" },
-      { skill: "Express" },
-      { skill: "IndexedDB" },
-    ],
-    img: pj23,
-  },
-  {
     id: 1,
     name: "Gerênciamanto médico Web App",
     side: "Full-stack",
@@ -73,6 +57,22 @@ export const Data = [
       { skill: "HTML/CSS/sass" },
     ],
     img: pj17,
+  },
+  {
+    id: 23,
+    name: "Chat Online Web App",
+    side: "Full-stack",
+    git: "https://github.com/warlleism/chat-socket-io-node-typescript",
+    skills: [
+      { skill: "HTML" },
+      { skill: "CSS" },
+      { skill: "TypeScript" },
+      { skill: "Socket.io" },
+      { skill: "Node.js" },
+      { skill: "Express" },
+      { skill: "IndexedDB" },
+    ],
+    img: pj23,
   },
   {
     id: 3,
