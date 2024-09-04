@@ -20,8 +20,25 @@ import pj19 from "../../assets/img/projects/pj19.png";
 import pj20 from "../../assets/img/projects/pj20.png";
 import pj21 from "../../assets/img/projects/pj21.png";
 import pj22 from "../../assets/img/projects/pj22.png";
+import pj23 from "../../assets/img/projects/pj23.png";
 
 export const Data = [
+  {
+    id: 23,
+    name: "Chat Online Web App",
+    side: "Full-stack",
+    git: "https://github.com/warlleism/chat-socket-io-node-typescript",
+    skills: [
+      { skill: "HTML" },
+      { skill: "CSS" },
+      { skill: "TypeScript" },
+      { skill: "Socket.io" },
+      { skill: "Node.js" },
+      { skill: "Express" },
+      { skill: "IndexedDB" },
+    ],
+    img: pj23,
+  },
   {
     id: 1,
     name: "Gerênciamanto médico Web App",
@@ -246,7 +263,7 @@ export const Data = [
     img: pj2,
   },
   {
-    id:16,
+    id: 16,
     name: "Landing Page Cultura negra",
     side: "Web Design",
     link: "https://www.behance.net/gallery/172466731/Web-Design",
