@@ -21,6 +21,7 @@ import pj20 from "../../assets/img/projects/pj20.png";
 import pj21 from "../../assets/img/projects/pj21.png";
 import pj22 from "../../assets/img/projects/pj22.png";
 import pj23 from "../../assets/img/projects/pj23.png";
+import pj24 from "../../assets/img/projects/pj24.png";
 
 export const Data = [
   {
@@ -325,5 +326,16 @@ export const Data = [
     link: "https://www.behance.net/gallery/176480859/Web-Design",
     skills: [{ skill: "Figma" }, { skill: "Web Design" }],
     img: pj12,
+  },
+  {
+    id: 23,
+    name: "Arte Web App",
+    side: "Front-end",
+    git: "https://github.com/warlleism/return-react-vite-website",
+    skills: [
+      { skill: "React.Js" },
+      { skill: "HTML/CSS/sass" },
+    ],
+    img: pj24,
   },
 ];
