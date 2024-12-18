@@ -10,6 +10,11 @@ import nodeIcon from "../../assets/img/icons/node.png";
 import mysqlIcon from "../../assets/img/icons/mysql.png";
 import sassIcon from "../../assets/img/icons/sass.png";
 import figmaIcon from "../../assets/img/icons/figma.png";
+import nestIcon from "../../assets/img/icons/nest.png";
+import prismaIcon from "../../assets/img/icons/prisma.png";
+import postgreIcon from "../../assets/img/icons/postgre.png";
+import dockerIcon from "../../assets/img/icons/docker.png";
+import muiIcon from "../../assets/img/icons/mui.png";
 
 export const Data = [
   {
@@ -71,5 +76,35 @@ export const Data = [
     id: 11,
     name: "Figma",
     img: figmaIcon,
+  },
+  {
+    id: 12,
+    name: "Nest Js",
+    img: nestIcon,
+  },
+  {
+    id: 13,
+    name: "Prisma",
+    img: prismaIcon,
+  },
+  {
+    id: 13,
+    name: "PostgreSQL",
+    img: postgreIcon,
+  },
+  {
+    id: 14,
+    name: "Docker",
+    img: dockerIcon,
+  },
+  {
+    id: 15,
+    name: "Prisma",
+    img: prismaIcon,
+  },
+  {
+    id: 16,
+    name: "Material UI",
+    img: muiIcon,
   },
 ];

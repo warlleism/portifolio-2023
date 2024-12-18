@@ -82,6 +82,7 @@ const Projects = () => {
                       <div
                         style={{
                           transition: "0.3s ease-in-out",
+                          textAlign: "start",
                           color:
                             hoveredContainerIndex === index ? "#4D0188" : "#fff",
                         }}

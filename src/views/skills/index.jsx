@@ -4,82 +4,53 @@ import "../../styles/textStyle.css";
 import "./style.scss";
 
 const Skills = () => {
-  const [hoveredContainerIndex, setHoveredContainerIndex] = useState(null);
+  const [hoveredIndex, setHoveredIndex] = useState(null);
 
-   const isIOS = /iPad|iPhone|iPod/.test(navigator.userAgent) && !window.MSStream;
+  const isIOS = /iPad|iPhone|iPod/.test(navigator.userAgent) && !window.MSStream;
 
-  const handleMouseEnter = (index) => {
-    setHoveredContainerIndex(index);
-  };
+  const handleMouseEnter = (index) => setHoveredIndex(index);
+  const handleMouseLeave = () => setHoveredIndex(null);
 
-  const handleMouseLeave = () => {
-    setHoveredContainerIndex(null);
-  };
-
-  const dataFilterSixUp = Data.filter((e) => e.id <= 5);
-  const dataFilterSixDown = Data.filter((e) => e.id >= 6);
+  const groupedData = [
+    Data.filter((e) => e.id <= 5),
+    Data.filter((e) => e.id >= 6 && e.id <= 11),
+    Data.filter((e) => e.id >= 12),
+  ];
 
   return (
     <div id="skills" className="mainContainerSkills">
       <div className="containerTextSkills text">Skills</div>
       <div className="containerFlexSkills">
-        <div className="containerRowSkills">
-          {dataFilterSixUp.map((e, index) => {
-            return (
-              <div
-                onMouseEnter={() => handleMouseEnter(index)}
-                onMouseLeave={handleMouseLeave}
-                key={e.id}
-                className={`containerItemSkills ${isIOS ? 'iosRainbow' : 'rainbow'}`}
-              >
-                <div
-                  style={{
-                    transition: "0.3s ease-in-out",
-                    bottom: hoveredContainerIndex === index ? "-50px" : "0px",
-                    opacity: hoveredContainerIndex === index ? 1 : 0,
-                  }}
-                  className="containerNameSkills text"
-                >
-                  {e.name}
-                </div>
-                <img src={e.img} alt="" className="containerImageSkills" />
-              </div>
-            );
-          })}
-        </div>
+        {groupedData.map((group, groupIndex) => (
+          <div key={groupIndex} className="containerRowSkills">
+            {group.map((item, index) => {
+              const globalIndex =
+                groupedData.slice(0, groupIndex).flat().length + index;
 
-        <div className="containerRowSkills">
-          {dataFilterSixDown.map((e, index) => {
-            return (
-              <div
-                onMouseEnter={() =>
-                  handleMouseEnter(index + dataFilterSixUp.length)
-                }
-                onMouseLeave={handleMouseLeave}
-                key={e.id}
-                className="containerItemSkills rainbow"
-              >
+              return (
                 <div
-                  style={{
-                    transition: "0.3s ease-in-out",
-                    bottom:
-                      hoveredContainerIndex === index + dataFilterSixUp.length
-                        ? "-50px"
-                        : "0px",
-                    opacity:
-                      hoveredContainerIndex === index + dataFilterSixUp.length
-                        ? 1
-                        : 0,
-                  }}
-                  className="containerNameSkills text"
+                  key={item.id}
+                  onMouseEnter={() => handleMouseEnter(globalIndex)}
+                  onMouseLeave={handleMouseLeave}
+                  className={`containerItemSkills ${isIOS ? "iosRainbow" : "rainbow"}`}
                 >
-                  {e.name}
+                  <div
+                    style={{
+                      transition: "0.3s ease-in-out",
+                      zIndex: 9999,
+                      bottom: hoveredIndex === globalIndex ? "-50px" : "0px",
+                      opacity: hoveredIndex === globalIndex ? 1 : 0,
+                    }}
+                    className="containerNameSkills text"
+                  >
+                    {item.name}
+                  </div>
+                  <img src={item.img} alt={item.name} className="containerImageSkills" />
                 </div>
-                <img src={e.img} alt="" className="containerImageSkills" />
-              </div>
-            );
-          })}
-        </div>
+              );
+            })}
+          </div>
+        ))}
       </div>
     </div>
   );
