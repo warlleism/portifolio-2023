@@ -13,7 +13,7 @@ const Menu = () => {
                 onClick={handleClick}
                 style={{ position: "absolute", top: "10px", right: "10px", cursor: "pointer" }} />
             <div className="menu-item" onClick={handleClick}>
-                <a href="#home">Home</a>
+                <a href="#home">Início</a>
             </div>
             <div className="menu-item" onClick={handleClick}>
                 <a href="#about">Sobre mim</a>
@@ -25,7 +25,7 @@ const Menu = () => {
                 <a href="#projects">Projetos</a>
             </div>
             <div className="menu-item" onClick={handleClick}>
-                <a href="#contact">Contato</a>
+                <a href="#contacts">Contato</a>
             </div>
         </div>
     )

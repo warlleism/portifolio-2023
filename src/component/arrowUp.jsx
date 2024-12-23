@@ -32,7 +32,7 @@ const ArrowUp = () => {
             className="
             transition-all
             fixed opacity-0 bottom-10 right-10 pointer-events-none bg-[#6004a8] p-3 rounded-full cursor-pointer">
-            <FaLongArrowAltUp size={30} color="#000" className="pointer-events-none" />
+            <FaLongArrowAltUp size={30} color="#fff" className="pointer-events-none" />
         </div>
     )
 }
