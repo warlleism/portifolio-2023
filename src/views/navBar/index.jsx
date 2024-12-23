@@ -2,8 +2,10 @@ import { useEffect } from "react";
 import "../../styles/textStyle.css";
 import { useState } from "react";
 import "./style.scss"
+import { SlMenu } from "react-icons/sl";
 
 const Header = () => {
+
   const [scrollParaBaixo, setScrollParaBaixo] = useState(false);
 
   useEffect(() => {
@@ -38,6 +40,11 @@ const Header = () => {
     };
   }, []);
 
+  const handleClick = () => {
+    const menu = document.getElementById("menu")
+    menu.style.display = "flex"
+  }
+
   return (
     <div style={{ margin: '0 auto', display: "flex", justifyContent: "center" }}>
       <div
@@ -49,7 +56,11 @@ const Header = () => {
       >
         <div className="header-container-name-list" >
           <div className="containerName text">
-            Warllei Martins
+            <div> Warllei Martins</div>
+            <SlMenu
+              size={30}
+              onClick={handleClick}
+              className="menuIcon" id="menuIcon" />
           </div>
           <ul>
             <li >

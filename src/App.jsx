@@ -11,6 +11,7 @@ import ArrowUp from "./component/arrowUp";
 import { useInView } from 'react-intersection-observer';
 import Spinner from "./views/contact/component/spinner";
 import { BarLoader } from "react-spinners";
+import Menu from "./component/menu";
 
 function SectionWrapper({ children }) {
   const { ref, inView } = useInView({
@@ -77,6 +78,7 @@ function App() {
       <SectionWrapper><Contacts /></SectionWrapper>
       <Footer />
       <ArrowUp />
+      <Menu />
     </div>
   );
 }

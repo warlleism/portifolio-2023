@@ -37,14 +37,30 @@
       letter-spacing: 3px;
       box-sizing: border-box;
 
+      .menuIcon {
+        display: none;
+      }
+
       @media (max-width: 1140px) {
         padding: 0 30px;
       }
 
-
       @media (max-width: 880px) {
         text-align: center;
         padding: 0;
+      }
+
+      @media (max-width: 940px) {
+        display: flex;
+        width: 100%;
+        padding: 15px;
+        justify-content: center;
+        align-items: center;
+        justify-content: space-between;
+
+        .menuIcon {
+          display: flex;
+        }
       }
     }
 
