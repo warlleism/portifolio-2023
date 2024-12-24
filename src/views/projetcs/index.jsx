@@ -22,8 +22,6 @@ const Projects = () => {
 
   const handlePageChange = (page) => {
     setCurrentPage(page);
-    window.scrollTo(0, 2500)
-
   };
 
   const totalPages = Math.ceil(Data.length / itemsPerPage);
@@ -137,14 +135,15 @@ const Projects = () => {
         </div>
         <div className="pagination">
           {Array.from({ length: totalPages }, (_, i) => i + 1).map((page) => (
-            <button
+            <a
+            href="#projects"
               key={page}
               onClick={() => handlePageChange(page)}
               className={`${currentPage === page ? "transparent" : "bg-[#3f0a6d]"
                 } bg-[#210936] border-2 border-solid border-[#9000ff]  text-[#fff] py-3 px-5 mr-5 rounded-[5px] text-[1.5rem] rainbow`}
             >
               {page}
-            </button>
+            </a>
           ))}
         </div>
       </div>
