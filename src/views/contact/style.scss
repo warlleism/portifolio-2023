@@ -61,7 +61,8 @@
 
         @media (max-width: 918px) {
             width: 90%;
-
+            border-right: solid 2px rgba(204, 0, 255, 0.329) !important;
+            border-radius: 5px !important;
         }
 
         .container-textarea {
