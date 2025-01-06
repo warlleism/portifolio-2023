@@ -14,7 +14,7 @@ import './style.scss';
 const schema = z.object({
     assunto: z.string().min(1, { message: 'Assunto é obrigatório' }).max(255, { message: 'Nome deve ter no máximo 255 caracteres' }),
     remetente: z.string().email({ message: 'E-mail inválido' }),
-    descricao: z.string().max(500, { message: 'Descrição deve ter no máximo 500 caracteres' }).optional(),
+    descricao: z.string().optional(),
 });
 
 
