@@ -27,23 +27,27 @@
       align-items: center;
       flex-wrap: wrap;
       gap: 5px;
+
       @media (max-width: 1142px) {
         margin-top: 20px;
       }
     }
 
     .containerCard {
-      width: 70%;
+      width: 80%;
       display: flex;
       flex-wrap: wrap;
       flex-direction: row;
       align-items: center;
       justify-content: space-between;
 
-      @media (max-width: 1142px) {
-        width: 90%;
-        justify-content: center;
-        gap: 10px;
+      @media (max-width: 1492px) {
+        width: 95%;
+        justify-content: space-between;
+      }
+
+      @media (max-width: 1263px) {
+        width: 99%;
       }
 
       @media (max-width: 912px) {
@@ -66,6 +70,14 @@
         height: 550px;
         border-radius: 5px;
         margin-bottom: 50px;
+
+        @media (max-width: 1212px) {
+          width: 350px;
+        }
+
+        @media (max-width: 1066px) {
+          width: 250px;
+        }
 
         @media (max-width: 1142px) {
           margin-bottom: 0px;
