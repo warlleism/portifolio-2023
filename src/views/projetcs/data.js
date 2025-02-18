@@ -25,8 +25,23 @@ import pj24 from "../../assets/img/projects/pj24.png";
 import pj25 from "../../assets/img/projects/pj25.png";
 import pj26 from "../../assets/img/projects/pj26.png";
 import pj27 from "../../assets/img/projects/pj27.png";
+import pj28 from "../../assets/img/projects/pj28.png";
 
 export const Data = [
+  {
+    id: 0,
+    name: "XML Stock System",
+    side: "Front-end",
+    git: "https://github.com/warlleism/frontend-xml-stock-typescript-react-native-expo",
+    skills: [
+      { skill: "React Native" },
+      { skill: "Expo" },
+      { skill: "TypeScript" }, ,
+      { skill: "Axios" },
+      { skill: "Tailwind" },
+    ],
+    img: pj28,
+  },
   {
     id: 1,
     name: "Node Nest Fast Food Api",
