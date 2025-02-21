@@ -413,7 +413,7 @@ export const Data = [
     img: pj11,
   },
   {
-    id: 27,
+    id: 29,
     name: "Landing Page da dentista",
     side: "Web Design",
     link: "https://www.behance.net/gallery/176480859/Web-Design",
@@ -421,7 +421,7 @@ export const Data = [
     img: pj12,
   },
   {
-    id: 29,
+    id: 30,
     name: "Arte Web App",
     side: "Front-end",
     git: "https://github.com/warlleism/return-react-vite-website",
